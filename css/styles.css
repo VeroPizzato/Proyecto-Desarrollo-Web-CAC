@@ -1,0 +1,95 @@
+*{
+   background:gainsboro; 
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h3 {
+    text-align: center;
+    font-size: medium;
+
+}
+
+label {
+    display: inline-block;
+    width: 80px;
+}
+
+img {
+    
+    height: 80vh;
+    width: 100vw;
+   
+    
+}
+
+.flota-autos {
+    
+    
+    text-align: center;
+    gap: 20px;
+    justify-content: space-between; 
+    
+}
+
+.flota-autos p {
+    
+    
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    
+   
+}
+
+
+.imagen-auto {
+    
+   width: 30%;
+   height: 30%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    text-decoration:none;
+    background-color:beige
+
+}
+
+a {
+   
+    text-decoration:none;
+    background-color:beige;
+    color:black;
+    &:hover{
+        color: darkorange;
+        font-weight: bold;
+    }
+}
+
+.contenedor-formulario {
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 1%;
+    border: 1px solid #666666;
+    width: 500px;
+    position: relative;
+    
+}
+
+footer {
+    
+    width: 100vw;
+    margin-top: auto;
+    margin-bottom: 0px;
+    text-align: center;
+    padding-top: 7px;
+    height: 46px;
+    
+    
+}
