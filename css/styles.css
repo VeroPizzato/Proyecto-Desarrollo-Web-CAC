@@ -1,5 +1,7 @@
 *{
-   background:gainsboro; 
+    margin: 0;
+    padding: 0;    
+    background:gainsboro; 
 }
 
 body {
@@ -61,15 +63,14 @@ nav {
 
 }
 
-a {
-   
+.nav-link {   
     text-decoration:none;
     background-color:beige;
     color:black;
-    &:hover{
-        color: darkorange;
-        font-weight: bold;
-    }
+}
+.nav-link:hover {    
+    color: darkorange;
+    font-weight: bold;
 }
 
 .contenedor-formulario {
