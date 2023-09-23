@@ -6,28 +6,28 @@
     <title>Auto Arg</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
-
-    <main> 
-        <header>
-            <h1>Auto ARG - Alquiler de Autos</h1>
-        </header>
-    
+<body>    
+    <header>
+        <img src="" alt="logo">
         <nav>
             <a class="nav-link" href="./index.html">Inicio</a>
-            <a class="nav-link" href="./pages/reservas.html">Reservas</a>
-            <a class="nav-link" href="./pages/lugares.html">Lugares</a>
-            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-        </nav>
+            <a class="nav-link" href="./pages/flota.html">Nuestra Flota</a>
+            <a class="nav-link" href="./pages/sucursales.html">Sucursales</a>
+            <a class="nav-link" href="./pages/nosotros.html">Quienes Somos</a>
+            <a class="nav-link" href="./pages/contacto.html">Contacto</a>          
+        </nav>    
+    </header>
+        
+    <main>
+        <h1>Auto ARG - Alquiler de Autos</h1>
 
         <div class="imagenfondo">
             <img src="./img/imagendefondo2.jpg" alt="imagen de fondo">
         </div>
 
-        <h3>Contenido Principal!</h3>
-        <p>Acá tenemos que indicar el contenido principal con la flota de autos, comentarios sobre clientes,  promociones, etc.</p>
+        <!-- ACA IRIA UN CAROUSEL DE BOOSTRAP CON PROMOCIONES -->
 
-        <div class="flota-autos">
+        <!-- <div class="flota-autos">
             <p>Plan Auto de Lujo</p>
             <img class="imagen-auto" src="./img/autolujo.png" alt="auto de lujo">
         
@@ -36,52 +36,52 @@
        
             <p>Plan Auto Standard</p>
             <img class="imagen-auto" src="./img/autostandard.png" alt="auto standard">
-        </div>
+        </div> -->
 
+        <section>
+            <div class="contenedor-formulario">
+                <h3>Llená el Formulario según tus preferencias:</h2>
+
+                <div>         
+                    <form>
+                        <fieldset>
+                            <legend>Elegi tu plan según tus preferencias</legend>
+            
+                            <div>
+                                <label>Nombre</label>
+                                <input type="text" placeholder="Tu Nombre">
+                            </div>
+                            <div>
+                                <label>Número</label>
+                                <input type="number" placeholder="Tu Número de contacto">
+                            </div>
+                            <div>
+                                <label>E-mail</label>
+                                <input type="email" placeholder="Tu Correo electrónico">
+                            </div>
+            
+                            <div>
+                                <label>Fecha de Salida</label>
+                                <input type="date" placeholder="Tu fecha de salida">
+                            </div>
+            
+                            <div>
+                                <label>Fecha de Llegada</label>
+                                <input type="date" placeholder="Tu fecha de llegada">
+                            </div>
+                            <div>
+                                <label>Mensaje</label>
+                                <textarea placeholder="Dejá tu comentario"></textarea>
+                            </div>
+                            <button type="submit">Enviar</button>
+            
+                        </fieldset>            
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <section>
-        <div class="contenedor-formulario">
-            <h3>Llená el Formulario según tus preferencias:</h2>
-        
-        
-                <form>
-                    <fieldset>
-                        <legend>Elegi tu plan según tus preferencias</legend>
-        
-                        <div>
-                            <label>Nombre</label>
-                            <input type="text" placeholder="Tu Nombre">
-                        </div>
-                        <div>
-                            <label>Número</label>
-                            <input type="number" placeholder="Tu Número de contacto">
-                        </div>
-                        <div>
-                            <label>E-mail</label>
-                            <input type="email" placeholder="Tu Correo electrónico">
-                        </div>
-        
-                        <div>
-                            <label>Fecha de Salida</label>
-                            <input type="date" placeholder="Tu fecha de salida">
-                        </div>
-        
-                        <div>
-                            <label>Fecha de Llegada</label>
-                            <input type="date" placeholder="Tu fecha de llegada">
-                        </div>
-                        <div>
-                            <label>Mensaje</label>
-                            <textarea placeholder="Dejá tu comentario"></textarea>
-                        </div>
-                        <button type="submit">Enviar</button>
-        
-                    </fieldset>
-        
-                </form>
-        </div>
-    </section>
     <footer>
         <p>Todos los derechos Reservados &copy</p>
     </footer>
