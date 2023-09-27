@@ -47,10 +47,13 @@ label {
 
 .titulo-h1 {
     color: var(--blanco);
-    position: absolute;
     background-color: rgba(0 0 0 / 20%);
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 span  {
