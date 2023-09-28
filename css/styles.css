@@ -8,6 +8,8 @@
     --gris: #8486a6;
 }
 
+/**GENERAL**/
+
 html {
     box-sizing: border-box;
 }   
@@ -37,6 +39,7 @@ h2 {
     margin: 20px;
 }
 
+/**NAVEGACION PRINCIPAL**/
 .navegacion-principal {
     display: flex;
     flex-direction: column;
@@ -67,7 +70,7 @@ h2 {
     color: var(--oscuro) ;
 }
 
-
+/**IMAGEN PRINCIPAL Y TITULO**/
 .imagenfondo {
     background-image: url(../img/imagendefondo2.jpg);
     height: 450px;
@@ -92,6 +95,7 @@ span  {
     font-size: 1.5em;
 }
 
+/**FORMULARIO**/
 .formulario {
     margin: 0 auto;
     border: none;
@@ -142,20 +146,58 @@ span  {
 .input-text {
     width: 100%;
     background-color: var(--blanco);
+    border: none;
+    padding: .5rem;
+    border-radius: .5rem;
 }
 
+.boton-enviar {
+    background-color: var(--anaranjado);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: .5rem;
+    text-align: center;
+    border: none;
+    width: auto;
+   
+}
+@media (max-width: 768px) {
+    .boton-enviar{
+        width: 100%;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .alinear-derecha {
+        display:flex;
+        justify-content: flex-end;
+    }
+}
+
+.boton-enviar:hover {
+    cursor: pointer;
+}
+
+
+/**FLOTA DE AUTOS**/
 /*.flota-autos {   
     text-align: center;
     gap: 20px;
     justify-content: space-between; 
 }*/
 
-.flota-autos p {    
+/*.flota-autos p {    
     position: relative;
     top: 0;
     left: 50%;
     transform: translateX(-50%); 
-}
+}*/
 
 /*.imagen-auto {    
    width: 20%;
@@ -163,6 +205,7 @@ span  {
 }*/
 
 
+/**FOOTER**/
 footer {
     width: 100vw;
     margin-top: auto;
