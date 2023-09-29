@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@200&family=Roboto+Slab&family=Rubik:wght@300&display=swap');
+
+.tipografia{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
 *{
     margin: 0;
     padding: 0;    
@@ -9,8 +19,10 @@ body {
 }
 
 h1, h3 {
-    text-align: center;
-    font-size: medium;
+    text-align: center; 
+    /* font-size: medium; */
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 label {
@@ -62,6 +74,21 @@ nav {
     font-weight: bold;
 }
 
+.menu {
+    position: relative;
+}
+    
+.submenu {
+    display: none;
+    position: absolute;
+    padding: 5px;   
+}
+
+/* Mostrar el submenú al pasar el mouse sobre el elemento padre */
+.menu:hover .submenu {
+    display: block;   
+}
+
 .contenedor-formulario {
     margin: 0 auto;
     text-align: center;
@@ -82,4 +109,221 @@ footer {
     height: 46px;
     
     
+}
+
+.imagen-grid{
+    margin: 5px;  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+    transition: 0.5s;
+}
+
+.imagen-grid:hover{
+    transform: scale(1.1);
+}
+
+.grid-container-autos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "imagen1 imagen2 imagen3"
+    "imagen4 imagen5 imagen6"
+    "imagen7 imagen8 imagen9"
+    ;
+    margin: 18px auto 32px;
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.319);
+}
+
+.imagen1{
+    grid-area: imagen1;
+    background-image: url('../img/autos/cronos.jpg'); 
+}
+.imagen2{
+    grid-area: imagen2;
+    background-image: url('../img/autos/peugeot.webp'); 
+}
+.imagen3{
+    grid-area: imagen3;
+    background-image: url('../img/autos/ford-focus.jpg'); 
+}
+.imagen4{
+    grid-area: imagen4;
+    background-image: url('../img/autos/logan.jpg'); 
+}
+.imagen5{
+    grid-area: imagen5;
+    background-image: url('../img/autos/etios.jpg'); 
+}
+.imagen6{
+    grid-area: imagen6;
+    background-image: url('../img/autos/toyota-corolla.jpg'); 
+}
+.imagen7{
+    grid-area: imagen7;
+    background-image: url('../img/autos/toyota-etios.jpg'); 
+}
+.imagen8{
+    grid-area: imagen8;
+    background-image: url('../img/autos/fiat-argo.jpg'); 
+}
+.imagen9{
+    grid-area: imagen9;
+    background-image: url('../img/autos/cruze.png'); 
+}
+
+.grid-container-camionetas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "imagen10 imagen11 imagen12"
+    "imagen13 imagen14 imagen15"
+    "imagen16 imagen17 imagen18"
+    ;
+    margin: 18px auto 32px;
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.319);
+}
+
+.imagen10{
+    grid-area: imagen10;
+    background-image: url('../img/camionetas/amarok.jpg'); 
+}
+.imagen11{
+    grid-area: imagen11;
+    background-image: url('../img/camionetas/chevrolet.jpg'); 
+}
+.imagen12{
+    grid-area: imagen12;
+    background-image: url('../img/camionetas/maverick.jpg'); 
+}
+.imagen13{
+    grid-area: imagen13;
+    background-image: url('../img/camionetas/nissan.jpg'); 
+}
+.imagen14{
+    grid-area: imagen14;
+    background-image: url('../img/camionetas/ram.jpg'); 
+}
+.imagen15{
+    grid-area: imagen15;
+    background-image: url('../img/camionetas/ranger.webp'); 
+}
+.imagen16{
+    grid-area: imagen16;
+    background-image: url('../img/camionetas/raptor.jpg'); 
+}
+.imagen17{
+    grid-area: imagen17;
+    background-image: url('../img/camionetas/renault-alaskan.jpg'); 
+}
+.imagen18{
+    grid-area: imagen18;
+    background-image: url('../img/camionetas/toyota-hilux.jpg'); 
+}
+
+
+.grid-container-furgones{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "imagen19 imagen20 imagen21"
+    "imagen22 imagen23 imagen24"
+    "imagen25 imagen26 imagen27"
+    ;
+    margin: 18px auto 32px;
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.319);
+}
+
+.imagen19{
+    grid-area: imagen19;
+    background-image: url('../img/furgones/citroen.jpg'); 
+}
+.imagen20{
+    grid-area: imagen20;
+    background-image: url('../img/furgones/daily.jpg'); 
+}
+.imagen21{
+    grid-area: imagen21;
+    background-image: url('../img/furgones/ducato.jpg'); 
+}
+.imagen22{
+    grid-area: imagen22;
+    background-image: url('../img/furgones/hyundai-camion.jpg'); 
+}
+.imagen23{
+    grid-area: imagen23;
+    background-image: url('../img/furgones/mercedes-benz.jpg'); 
+}
+.imagen24{
+    grid-area: imagen24;
+    background-image: url('../img/furgones/JAC.webp'); 
+}
+.imagen25{
+    grid-area: imagen25;
+    background-image: url('../img/furgones/hyundai-furgon.jpg'); 
+}
+.imagen26{
+    grid-area: imagen26;
+    background-image: url('../img/furgones/renault.png'); 
+}
+.imagen27{
+    grid-area: imagen27;
+    background-image: url('../img/furgones/mercedes-benz2.jpg'); 
+}
+
+/*Estilos para mobile*/
+@media (max-width: 767px){
+    .grid-container-autos{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        width: 300px;
+        grid-template-areas:
+        "imagen1 imagen2"
+        "imagen3 imagen4"
+        "imagen5 imagen6"
+        "imagen7 imagen8"
+        "imagen9 imagen9"
+        ;
+    }
+}
+
+@media (max-width: 767px){
+    .grid-container-camionetas{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        width: 300px;
+        grid-template-areas:
+        "imagen10 imagen11"
+        "imagen12 imagen13"
+        "imagen14 imagen15"
+        "imagen16 imagen17"
+        "imagen18 imagen18"
+        ;
+    }
+}
+@media (max-width: 767px){
+    .grid-container-furgones{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        width: 300px;
+        grid-template-areas:
+        "imagen19 imagen20"
+        "imagen21 imagen22"
+        "imagen23 imagen24"
+        "imagen25 imagen26"
+        "imagen27 imagen27"
+        ;
+    }
 }
