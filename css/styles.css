@@ -65,6 +65,7 @@ h1, h2 {
 .navegacion-principal a {
     display: block;
     text-align: center;
+    background-color: var(--azulado);
     color: var(--blanco);
     text-decoration: none;
     font-size: 1.2rem;
@@ -76,6 +77,46 @@ h1, h2 {
     background-color: var(--anaranjado);
     color: var(--oscuro) ;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    text-decoration:none;
+    background-color:beige
+
+}
+
+.nav-link {   
+    text-decoration:none;
+    background-color:beige;
+    color:black;
+}
+.nav-link:hover {    
+    color: darkorange;
+    font-weight: bold;
+}
+
+.menu {
+    position: relative;
+}
+    
+.submenu {
+    display: none;
+    position: absolute;
+    padding: 5px;   
+}
+
+/* Mostrar el submenú al pasar el mouse sobre el elemento padre */
+.menu:hover .submenu {
+    display: block;   
+}
+
+@media (max-width: 768px) {
+    .menu:hover .submenu {
+       position: relative;
+    }
+}
+
 
 /**IMAGEN PRINCIPAL Y TITULO**/
 .imagenfondo {
@@ -154,6 +195,7 @@ span  {
     .textarea {
         height: 100%;
     }
+   
 }
 
 .inputs {
@@ -175,6 +217,41 @@ span  {
     border-radius: .5rem;
 }
 
+/** CSS PARA PAGINA CONTACTO **/
+@media (min-width: 768px) {
+    .contenedor-inputs-contacto {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto 12rem;
+        column-gap: 1rem;
+    }
+    
+    .inputs-contacto:nth-child(3),
+    .inputs-contacto:nth-child(4) {
+        grid-column: 1 / 3;
+    }
+
+    .inputs-contacto:nth-child(6){
+        grid-row: 3/4;
+    }
+    
+    .textarea {
+        height: 100%;
+    }
+   
+}
+
+.inputs-contacto {
+    margin-bottom: 1rem;
+}
+
+.inputs-contacto label {
+    display: block;
+    color: var(--blanco);
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
 .boton-enviar {
     background-color: var(--anaranjado);
     color: var(--blanco);
@@ -194,7 +271,6 @@ span  {
     .boton-enviar{
         width: 100%;
     }
-    
 }
 
 @media (min-width: 768px) {
@@ -208,7 +284,14 @@ span  {
     cursor: pointer;
 }
 
+
 /**FLOTA DE AUTOS**/
+/*
+.imagen-auto {    
+    width: 30%;
+    height: 30%;
+ }
+
 /*.flota-autos {   
     text-align: center;
     gap: 20px;
@@ -227,44 +310,19 @@ span  {
 }*/
 
 
-.imagen-auto {    
-   width: 30%;
-   height: 30%;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    text-decoration:none;
-    background-color:beige
-
-}
-
-.nav-link {   
-    text-decoration:none;
-    background-color:beige;
-    color:black;
-}
-.nav-link:hover {    
-    color: darkorange;
-    font-weight: bold;
-}
-
-.menu {
-    position: relative;
-}
-    
-.submenu {
-    display: none;
-    position: absolute;
-    padding: 5px;   
-}
-
 /* Mostrar el submenú al pasar el mouse sobre el elemento padre */
 .menu:hover .submenu {
     display: block;   
 }
 
+@media (max-width: 768px) {
+    .menu:hover .submenu {
+       position: relative;
+    }
+}
+
+
+/** ESTO NO SE QUE HACE ACA??? 
 .contenedor-formulario {
     margin: 0 auto;
     text-align: center;
@@ -274,18 +332,19 @@ nav {
     position: relative;
     
 }
+**/
 
 /**FOOTER**/
-footer {
+.footer {
     width: 100vw;
     margin-top: auto;
     margin-bottom: 0px;
     text-align: center;
     padding-top: 7px;
     height: 46px;
-    
-    
 }
+
+/* IMAGENES FLOTA AUTOS CON GRID **/
 
 .imagen-grid{
     margin: 5px;  
@@ -503,3 +562,4 @@ footer {
         ;
     }
 }
+

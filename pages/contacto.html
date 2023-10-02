@@ -4,36 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header>
         <img src="" alt="logo">
-         <nav>            
+         <nav class="navegacion-principal">            
             <a class="nav-link" href="../index.html">Inicio</a></li>
             <div class="menu">
-               <a class="nav-link" href="./flota.html">Nuestra Flota</a>
+               <a class="nav-link" href="./pages/flota.html">Nuestra Flota</a>
                <div class="submenu">
-                  <a class="nav-link" href="./flota.html#autos">Autos</a>
-                  <a class="nav-link" href="./flota.html#camionetas">Camionetas</a>
-                  <a class="nav-link" href="./flota.html#furgones">Furgones</a>
+                  <a class="nav-link" href="./pages/flota.html#autos">Autos</a>
+                  <a class="nav-link" href="./pages/flota.html#camionetas">Camionetas</a>
+                  <a class="nav-link" href="./pages/flota.html#furgones">Furgones</a>
                </div>
             </div>
-            <a class="nav-link" href="./sucursales.html">Sucursales</a> 
-            <a class="nav-link" href="./nosotros.html">Quienes Somos</a>
-            <a class="nav-link" href="./contacto.html">Contacto</a>             
-         </nav>         
+            <a class="nav-link" href="./pages/sucursales.html">Sucursales</a> 
+            <a class="nav-link" href="../pages/nosotros.html">Quienes Somos</a>
+            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+        </nav>
     </header>
 
     <main>
-        <h1>Contacto</h1>
+        <section class="formulario">
+            <form class="formulario-desplegable">
+                <fieldset>
+                    <legend class="leyenda">Indique sus datos personales:</legend>
+                    <div class="contenedor-inputs-contacto">
+                        <div class="inputs-contacto">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" placeholder="Tu Nombre">
+                        </div>
+                        <div class="inputs-contacto">
+                            <label>Número</label>
+                            <input class="input-text" type="number" placeholder="Tu Número de contacto">
+                        </div>
+                        <div class="inputs-contacto">
+                            <label>E-mail</label>
+                            <input class="input-text" type="email" placeholder="Tu Correo electrónico">
+                        </div>
 
-        
-
-
+                        <div class="inputs-contacto">
+                            <label>Mensaje</label>
+                            <textarea class="input-text textarea" placeholder="Dejá tu comentario"></textarea>
+                        </div>
+                    </div>
+                    <div class="alinear-derecha">
+                        <button class="boton-enviar" type="submit">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>Todos los derechos Reservados &copy</p>
     </footer>
 
