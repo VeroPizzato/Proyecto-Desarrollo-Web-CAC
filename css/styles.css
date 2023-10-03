@@ -5,7 +5,10 @@
     --oscuro: rgb(28, 25, 49);
     --arg: dodgerblue;
     --beige: #f8f2cb;
-    --gris: #8486a6;
+    --gris: #8486a6;  
+    --black: #000000;
+    --grisoscuro: #666666;
+
 }
 
 /**GENERAL**/
@@ -39,6 +42,10 @@ body {
    background-color: var(--beige);
 }
 
+header{
+    background-color:var(--black) ;
+}
+
 h1, h2 {
     text-align: center;
     font-size: large;  
@@ -51,8 +58,7 @@ h1, h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: var(--azulado);
-    margin-top: 60px;
+    background-color: var(--gris);
 }
 
 @media (min-width: 768px) {
@@ -62,33 +68,41 @@ h1, h2 {
     }
 }
 
+
+.logo {
+    display:block;
+    margin:auto;
+    width: 200px;
+}
 .navegacion-principal a {
     display: block;
     text-align: center;
-    background-color: var(--azulado);
+    background-color: var(--gris);
     color: var(--blanco);
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
     padding: 1rem;
+    transition: all 0.8s ease;
 }
 
 .navegacion-principal a:hover {
-    background-color: var(--anaranjado);
+    background-color: var(--azulado);
     color: var(--oscuro) ;
+    transform: scale(1.08);
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     text-decoration:none;
-    background-color:beige
+    background-color:rgb(197, 197, 184)
 
 }
 
 .nav-link {   
     text-decoration:none;
-    background-color:beige;
+    background-color:rgb(197, 197, 184);
     color:black;
 }
 .nav-link:hover {    
