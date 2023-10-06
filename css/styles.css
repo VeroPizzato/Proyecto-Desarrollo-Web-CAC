@@ -348,6 +348,35 @@ span  {
 }
 **/
 
+/* CSS para "nosotros" */
+.equipo {
+    display: grid;
+    grid-template-rows: .05fr 0.25fr 0.25fr;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    padding: 20px;
+    margin: auto;
+    width: 500px;
+    height: 500px;    
+}
+
+.persona {
+    background-color: orange;
+    text-align: center;
+    width: 250px;
+}
+
+.perfil{
+    background-color: blueviolet;
+    width: 250px;
+    height: 250px;
+}
+
+.descripcion{
+   text-align:justify; 
+}
+
 /**FOOTER**/
 .footer {
     width: 100vw;
