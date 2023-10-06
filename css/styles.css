@@ -5,7 +5,7 @@
     --oscuro: rgb(28, 25, 49);
     --arg: dodgerblue;
     --beige: #f8f2cb;
-    --gris: #8486a6;  
+    --gris: #8486a6;
     --black: #000000;
     --grisoscuro: #666666;
 
@@ -15,12 +15,12 @@
 
 html {
     box-sizing: border-box;
-}   
+}
 
 *, *:before, *:after {
     box-sizing: inherit;
 }
-  
+
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@200&family=Roboto+Slab&family=Rubik:wght@300&display=swap');
 
 .tipografia{
@@ -33,8 +33,8 @@ html {
 
 *{
     margin: 0;
-    padding: 0;    
-}   
+    padding: 0;
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -64,7 +64,7 @@ h1, h2, h3 {
 @media (min-width: 768px) {
     .navegacion-principal {
         flex-direction: row;
-        
+
     }
 }
 
@@ -100,12 +100,12 @@ nav {
 
 }
 
-.nav-link {   
+.nav-link {
     text-decoration:none;
     background-color:rgb(197, 197, 184);
     color:black;
 }
-.nav-link:hover {    
+.nav-link:hover {
     color: darkorange;
     font-weight: bold;
 }
@@ -113,16 +113,16 @@ nav {
 .menu {
     position: relative;
 }
-    
+
 .submenu {
     display: none;
     position: absolute;
-    padding: 5px;   
+    padding: 5px;
 }
 
 /* Mostrar el submenú al pasar el mouse sobre el elemento padre */
 .menu:hover .submenu {
-    display: block;   
+    display: block;
 }
 
 @media (max-width: 768px) {
@@ -196,7 +196,7 @@ span  {
         grid-template-rows: auto auto auto 12rem;
         column-gap: 1rem;
     }
-    
+
     .inputs:nth-child(3),
     .inputs:nth-child(6) {
         grid-column: 1 / 3;
@@ -205,11 +205,11 @@ span  {
     .inputs:nth-child(6){
         grid-row: 4/5;
     }
-    
+
     .textarea {
         height: 100%;
     }
-   
+
 }
 
 .inputs {
@@ -239,7 +239,7 @@ span  {
         grid-template-rows: auto auto 12rem;
         column-gap: 1rem;
     }
-    
+
     .inputs-contacto:nth-child(3),
     .inputs-contacto:nth-child(4) {
         grid-column: 1 / 3;
@@ -248,11 +248,11 @@ span  {
     .inputs-contacto:nth-child(6){
         grid-row: 3/4;
     }
-    
+
     .textarea {
         height: 100%;
     }
-   
+
 }
 
 .inputs-contacto {
@@ -279,7 +279,7 @@ span  {
     text-align: center;
     border: none;
     width: auto;
-   
+
 }
 @media (max-width: 768px) {
     .boton-enviar{
@@ -301,24 +301,24 @@ span  {
 
 /**FLOTA DE AUTOS**/
 /*
-.imagen-auto {    
+.imagen-auto {
     width: 30%;
     height: 30%;
  }
 
-/*.flota-autos {   
+/*.flota-autos {
     text-align: center;
     gap: 20px;
-    justify-content: space-between; 
+    justify-content: space-between;
 }*/
 
-/*.flota-autos p {    
+/*.flota-autos p {
     position: relative;
     top: 0;
     left: 50%;
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
 
-/*.imagen-auto {    
+/*.imagen-auto {
    width: 20%;
    height: 20%;
 }*/
@@ -326,7 +326,7 @@ span  {
 
 /* Mostrar el submenú al pasar el mouse sobre el elemento padre */
 .menu:hover .submenu {
-    display: block;   
+    display: block;
 }
 
 @media (max-width: 768px) {
@@ -336,7 +336,7 @@ span  {
 }
 
 
-/** ESTO NO SE QUE HACE ACA??? 
+/** ESTO NO SE QUE HACE ACA???
 .contenedor-formulario {
     margin: 0 auto;
     text-align: center;
@@ -344,7 +344,7 @@ span  {
     border: 1px solid #666666;
     width: 500px;
     position: relative;
-    
+
 }
 **/
 
@@ -358,13 +358,40 @@ span  {
     height: 46px;
 }
 
-/* IMAGENES FLOTA AUTOS CON GRID **/
+/* IMAGENES FLOTA CON GRID **/
+.imgFlota{
+    max-width: 250px;
+}
+
+.boton-reservar{    
+    background-color:  #8486a6;
+    color: white;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    padding: 4px;
+    margin: 6px;
+    transition: 1s;
+}
+.boton-reservar:hover{
+    background-color: rgb(245, 165, 66);;
+    color: black;
+    font-weight: bold;
+    transform: scale(1.09);
+    transition: 1s;
+    border-radius: 15px;
+}
 
 .imagen-grid{
-    margin: 5px;  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 5px;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
+    text-align: center;
     transition: 0.5s;
 }
 
@@ -382,47 +409,38 @@ span  {
     "imagen7 imagen8 imagen9"
     ;
     margin: 18px auto 32px;
-    width: 600px;
-    height: 600px;
+    width: 800px;
+    height: auto;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.319);
 }
 
 .imagen1{
-    grid-area: imagen1;
-    background-image: url('../img/autos/cronos.jpg'); 
+    grid-area: imagen1;    
 }
 .imagen2{
-    grid-area: imagen2;
-    background-image: url('../img/autos/peugeot.webp'); 
+    grid-area: imagen2;   
 }
 .imagen3{
-    grid-area: imagen3;
-    background-image: url('../img/autos/ford-focus.jpg'); 
+    grid-area: imagen3;    
 }
 .imagen4{
-    grid-area: imagen4;
-    background-image: url('../img/autos/logan.jpg'); 
+    grid-area: imagen4;    
 }
 .imagen5{
-    grid-area: imagen5;
-    background-image: url('../img/autos/etios.jpg'); 
+    grid-area: imagen5;   
 }
 .imagen6{
-    grid-area: imagen6;
-    background-image: url('../img/autos/toyota-corolla.jpg'); 
+    grid-area: imagen6;    
 }
 .imagen7{
-    grid-area: imagen7;
-    background-image: url('../img/autos/toyota-etios.jpg'); 
+    grid-area: imagen7;    
 }
 .imagen8{
-    grid-area: imagen8;
-    background-image: url('../img/autos/fiat-argo.jpg'); 
+    grid-area: imagen8;    
 }
 .imagen9{
-    grid-area: imagen9;
-    background-image: url('../img/autos/cruze.png'); 
+    grid-area: imagen9;    
 }
 
 .grid-container-camionetas{
@@ -435,49 +453,39 @@ span  {
     "imagen16 imagen17 imagen18"
     ;
     margin: 18px auto 32px;
-    width: 600px;
-    height: 600px;
+    width: 800px;
+    height: auto;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.319);
 }
 
 .imagen10{
-    grid-area: imagen10;
-    background-image: url('../img/camionetas/amarok.jpg'); 
+    grid-area: imagen10;   
 }
 .imagen11{
-    grid-area: imagen11;
-    background-image: url('../img/camionetas/chevrolet.jpg'); 
+    grid-area: imagen11;   
 }
 .imagen12{
-    grid-area: imagen12;
-    background-image: url('../img/camionetas/maverick.jpg'); 
+    grid-area: imagen12;    
 }
 .imagen13{
-    grid-area: imagen13;
-    background-image: url('../img/camionetas/nissan.jpg'); 
+    grid-area: imagen13;   
 }
 .imagen14{
-    grid-area: imagen14;
-    background-image: url('../img/camionetas/ram.jpg'); 
+    grid-area: imagen14;    
 }
 .imagen15{
-    grid-area: imagen15;
-    background-image: url('../img/camionetas/ranger.webp'); 
+    grid-area: imagen15;   
 }
 .imagen16{
-    grid-area: imagen16;
-    background-image: url('../img/camionetas/raptor.jpg'); 
+    grid-area: imagen16;   
 }
 .imagen17{
-    grid-area: imagen17;
-    background-image: url('../img/camionetas/renault-alaskan.jpg'); 
+    grid-area: imagen17;    
 }
 .imagen18{
-    grid-area: imagen18;
-    background-image: url('../img/camionetas/toyota-hilux.jpg'); 
+    grid-area: imagen18;  
 }
-
 
 .grid-container-furgones{
     display: grid;
@@ -489,55 +497,45 @@ span  {
     "imagen25 imagen26 imagen27"
     ;
     margin: 18px auto 32px;
-    width: 600px;
-    height: 600px;
+    width: 800px;
+    height: auto;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.319);
 }
 
 .imagen19{
-    grid-area: imagen19;
-    background-image: url('../img/furgones/citroen.jpg'); 
+    grid-area: imagen19;    
 }
 .imagen20{
-    grid-area: imagen20;
-    background-image: url('../img/furgones/daily.jpg'); 
+    grid-area: imagen20;   
 }
 .imagen21{
-    grid-area: imagen21;
-    background-image: url('../img/furgones/ducato.jpg'); 
+    grid-area: imagen21;    
 }
 .imagen22{
-    grid-area: imagen22;
-    background-image: url('../img/furgones/hyundai-camion.jpg'); 
+    grid-area: imagen22;   
 }
 .imagen23{
-    grid-area: imagen23;
-    background-image: url('../img/furgones/mercedes-benz.jpg'); 
+    grid-area: imagen23;    
 }
 .imagen24{
-    grid-area: imagen24;
-    background-image: url('../img/furgones/JAC.webp'); 
+    grid-area: imagen24;    
 }
 .imagen25{
-    grid-area: imagen25;
-    background-image: url('../img/furgones/hyundai-furgon.jpg'); 
+    grid-area: imagen25;    
 }
 .imagen26{
-    grid-area: imagen26;
-    background-image: url('../img/furgones/renault.png'); 
+    grid-area: imagen26;   
 }
 .imagen27{
-    grid-area: imagen27;
-    background-image: url('../img/furgones/mercedes-benz2.jpg'); 
+    grid-area: imagen27;    
 }
 
-/*Estilos para mobile*/
-@media (max-width: 767px){
+@media (min-width: 675px) and (max-width: 800px) {
     .grid-container-autos{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
-        width: 300px;
+        width: 600px;
         grid-template-areas:
         "imagen1 imagen2"
         "imagen3 imagen4"
@@ -548,11 +546,11 @@ span  {
     }
 }
 
-@media (max-width: 767px){
+@media (min-width: 675px) and (max-width: 800px) {
     .grid-container-camionetas{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
-        width: 300px;
+        width: 600px;
         grid-template-areas:
         "imagen10 imagen11"
         "imagen12 imagen13"
@@ -562,7 +560,7 @@ span  {
         ;
     }
 }
-@media (max-width: 767px){
+@media (min-width: 675px) and (max-width: 800px) {
     .grid-container-furgones{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
@@ -577,3 +575,59 @@ span  {
     }
 }
 
+@media (min-width: 412px) and (max-width: 674px) {
+    .grid-container-autos{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        width: 300px;
+        grid-template-areas:
+        "imagen1"
+        "imagen2"
+        "imagen3"
+        "imagen4"
+        "imagen5"
+        "imagen6"
+        "imagen7"
+        "imagen8"
+        "imagen9"
+        ;
+    }
+}
+
+@media (min-width: 412px) and (max-width: 674px) {
+    .grid-container-camionetas{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        width: 300px;
+        grid-template-areas:
+        "imagen10"
+        "imagen11"
+        "imagen12"
+        "imagen13"
+        "imagen14"
+        "imagen15"
+        "imagen16"
+        "imagen17"
+        "imagen18"
+        ;
+    }
+}
+
+@media (min-width: 412px) and (max-width: 674px) {
+    .grid-container-furgones{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        width: 300px;
+        grid-template-areas:
+        "imagen19"
+        "imagen20"
+        "imagen21"
+        "imagen22"
+        "imagen23"
+        "imagen24"
+        "imagen25"
+        "imagen26"
+        "imagen27"
+        ;
+    }
+}
