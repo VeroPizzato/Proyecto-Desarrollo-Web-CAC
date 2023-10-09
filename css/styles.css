@@ -134,9 +134,9 @@ nav {
 
 /**IMAGEN PRINCIPAL Y TITULO**/
 .imagenfondo {
-    background-image: url(../img/imagendefondo2.jpg);
+    /* background-image: url(../img/imagendefondo2.jpg); */
     /* background-image: url(../img/fondo_ruta.webp); */
-    /* background-image: url(../img/ruta_montañas.jpg); */
+    background-image: url(../img/ruta_montañas.jpg); 
     height: 450px;
     background-repeat: no-repeat;
     background-size: cover;
