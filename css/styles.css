@@ -7,29 +7,37 @@
     --beige: #f8f2cb;
     --gris: #8486a6;
     --black: #000000;
-    --grisoscuro: #666666;
+    --grisoscuro: #cfcbcb;
+    --turquesa: #19dff1;
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --linkedin: #0077B5;
+    --whatsapp: #25D366;
+
+
 
 }
 
 /**GENERAL**/
 
 html {
+    width: 100%;
     box-sizing: border-box;
 }
-
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@200&family=Roboto+Slab&family=Rubik:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@200&family=Roboto+Slab&family=Rubik:wght@300&display=swap');
 
 .tipografia{
     font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Mono', monospace;
+    font-family: b'Roboto Mono', monospace;
     font-family: 'Roboto Slab', serif;
     font-family: 'Rubik', sans-serif;
     text-align: center;
-} */
+}
 
 *{
     margin: 0;
@@ -39,7 +47,11 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
    /* font-family: 'PT Sans Narrow', sans-serif;*/
-   background-color: var(--beige);
+   background-color: var(--grisoscuro);
+   /* acomoda el footer al final del texto pero también abajo de la página */
+   display: grid;
+   min-height: 100vh;
+   grid-template-rows: auto 1fr auto;
 }
 
 header{
@@ -82,12 +94,12 @@ h1, h2, h3 {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
-    padding: 1rem;
+    padding: 0.5rem;
     transition: all 0.8s ease;
 }
 
 .navegacion-principal a:hover {
-    background-color: var(--azulado);
+    background-color: var( --arg);
     color: var(--oscuro) ;
     transform: scale(1.08);
 }
@@ -104,11 +116,14 @@ nav {
     text-decoration:none;
     background-color:rgb(197, 197, 184);
     color:black;
+    border-radius: 10%;
+    margin-bottom: 1px;
 }
-.nav-link:hover {
+/* .nav-link1:hover {
     color: darkorange;
     font-weight: bold;
-}
+} */
+
 
 .menu {
     position: relative;
@@ -152,6 +167,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 span  {
@@ -162,6 +178,7 @@ span  {
 /**FORMULARIO**/
 .formulario {
     margin: 0 auto;
+    margin-bottom: 20px;
     border: none;
     border-radius: 1%;
     width: 500px;
@@ -188,7 +205,7 @@ span  {
     font-weight: 700;
     margin: 1rem 0;
     text-align: center;
-    color: orange;
+    color: #19dff1;
 }
 
 @media (min-width: 768px) {
@@ -270,7 +287,7 @@ span  {
 }
 
 .boton-enviar {
-    background-color: var(--anaranjado);
+    background-color: #19dff1;
     color: var(--blanco);
     padding: 1rem 3rem;
     margin-top: 2rem;
@@ -386,8 +403,83 @@ span  {
     margin-top: auto;
     margin-bottom: 0px;
     text-align: center;
-    padding-top: 7px;
-    height: 46px;
+    color: #19dff1;
+    padding-top: 5px;
+    height: auto;
+    background-color: #000000;
+
+}
+/* ubicación dentro del footer */
+.redes-container{
+display: flex;
+height: auto;
+align-items: center;
+justify-content: center;
+}
+/* ubicación entre iconos */
+.redes-container ul li{
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+/* formato iconocs */
+.redes-container ul li a{
+    display: block;
+    padding: 0 10px;
+    background: var(--turquesa) ;
+    color: #FFFFFF;
+    line-height: auto;
+    font-size: 8px;
+    box-shadow: 0 6px 15px 0px rgba(252, 255, 255, 0.319);
+    border-radius: 5%;
+    transition: .2s;
+}
+
+.redes-container ul:hover a  {
+    filter: blur(2px);
+}
+
+.redes-container ul li a:hover{
+transform: translateY(-3px) scale(1.06);
+box-shadow: 0 6px 15px 0px rgba(252, 253, 253, 0.945);
+filter: none;
+}
+
+.redes-container ul li .facebook:hover{
+    background: var(--facebook);
+}
+.redes-container ul li .instagram:hover{
+    background: var(--instagram);
+}
+/* .redes-container ul li .linkedin:hover{
+    background: var(--linkedin);
+} */
+.redes-container ul li .whatsapp:hover{
+    background: var(--whatsapp);
+}
+
+.navfooter ul{
+        list-style-type: none; 
+        text-align: center;
+    }
+    .navfooter li {
+        display: inline-block; /* Hacer que los elementos de la lista se muestren en línea */
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }   
+    .navfooter a{
+        color: var(--turquesa);
+        transition: .2s;
+    }
+    .navfooter a:hover{
+     color: #FFFFFF;
+    }
+         
+
+.linea_derechos{
+    font-size: xx-small;
 }
 
 /* IMAGENES FLOTA CON GRID **/
@@ -405,7 +497,7 @@ span  {
     transition: 1s;
 }
 .boton-reservar:hover{
-    background-color: rgb(245, 165, 66);;
+    background-color: #19dff1;;
     color: black;
     font-weight: bold;
     transform: scale(1.09);
