@@ -457,6 +457,24 @@ filter: none;
     background: var(--whatsapp);
 }
 
+.navfooter ul{
+        list-style-type: none; 
+        text-align: center;
+    }
+    .navfooter li {
+        display: inline-block; /* Hacer que los elementos de la lista se muestren en línea */
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }   
+    .navfooter a{
+        color: var(--turquesa);
+        transition: .2s;
+    }
+    .navfooter a:hover{
+     color: #FFFFFF;
+    }
+         
+
 .linea_derechos{
     font-size: xx-small;
 }
