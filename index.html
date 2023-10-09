@@ -15,7 +15,7 @@
 <body>
     <header>
          <img src="img/logo/logo.jpeg" alt="logo" class="logo">
-         <nav class="navegacion-principal">            
+         <nav class="navegacion-principal">
             <a class="nav-link" href="./index.html">Inicio</a></li>
             <div class="menu">
                <a class="nav-link" href="./pages/flota.html">Nuestra Flota</a>
@@ -25,14 +25,14 @@
                   <a class="nav-link" href="./pages/flota.html#furgones">Furgones</a>
                </div>
             </div>
-            <a class="nav-link" href="./pages/sucursales.html">Sucursales</a> 
+            <a class="nav-link" href="./pages/sucursales.html">Sucursales</a>
             <div class="menu">
-                <a class="nav-link" href="./pages/nosotros.html">Quienes Somos</a>    
+                <a class="nav-link" href="./pages/nosotros.html">Quienes Somos</a>
                 <div class="submenu">
                     <a class="nav-link" href="./pages/nosotros.html#equipo">Equipo</a>
                     <a class="nav-link" href="./pages/nosotros.html#proposito">Nuestra visión</a>
                 </div>
-            </div> 
+            </div>
             <a class="nav-link" href="./pages/contacto.html">Contacto</a>
         </nav>
     </header>
@@ -42,22 +42,8 @@
             <div class="titulo-h1">
                 <h1>Auto <span>AR</span> - Alquiler de Autos</h1>
             </div>
-        </section>
-        <!-- ACA IRIA UN CAROUSEL DE BOOSTRAP CON PROMOCIONES -->
-
-        <!-- <div class="flota-autos">
-            <p>Plan Auto de Lujo</p>
-            <img class="imagen-auto" src="./img/autolujo.png" alt="auto de lujo">
-        
-            <p>Plan Auto Mediano</p>
-            <img class="imagen-auto" src="./img/automediano.png" alt="auto mendiano">
-       
-            <p>Plan Auto Standard</p>
-            <img class="imagen-auto" src="./img/autostandard.png" alt="auto standard">
-        </div> -->
-
-        <h2>Dejanos tus datos y te contactamos</h2>
-
+        </section>        
+        <h2>Dejanos tus datos y te contactamos</h2>             
         <section class="formulario">
             <form class="formulario-desplegable">
                 <fieldset>
@@ -75,12 +61,28 @@
                             <label>E-mail</label>
                             <input class="input-text" type="email" placeholder="Tu Correo electrónico">
                         </div>
-
+                        <div class="inputs">
+                            <label>Provincia de retiro</label>
+                            <select class="input-text" id="provincia-retiro">
+                                <option value="Elije una provincia">Elije una provincia</option>
+                            </select>
+                        </div>   
+                        <div class="inputs">
+                            <label>Municipio de retiro</label>
+                            <select class="input-text" id="municipio-retiro">
+                                <option value="Elije un municipio">Elije un municipio</option>
+                            </select>
+                        </div>   
+                        <div class="inputs">
+                            <label>Localidad de retiro</label>
+                            <select class="input-text" id="localidad-retiro">
+                                <option value="Elije una localidad">Elije una localidad</option>
+                            </select>
+                        </div>                       
                         <div class="inputs">
                             <label>Fecha de Salida</label>
                             <input class="input-text" type="date" placeholder="Tu fecha de salida">
                         </div>
-
                         <div class="inputs">
                             <label>Fecha de Llegada</label>
                             <input class="input-text" type="date" placeholder="Tu fecha de llegada">
@@ -91,7 +93,7 @@
                         </div>
                     </div>
                     <div class="alinear-derecha">
-                        <button class="boton-enviar" type="submit">Enviar</button>
+                        <button class="boton-enviar" type="submit">Buscar Auto</button>
                     </div>
                 </fieldset>
             </form>
@@ -118,7 +120,7 @@
             </div>   
             <div class="linea_derechos"><p>Todos los derechos Reservados &copy;2023 - Autos AR</p></div> 
     </footer>
-                
+    <script src="js/script.js"></script>            
 </body>
 
 </html>
