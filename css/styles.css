@@ -114,7 +114,7 @@ nav {
 
 .nav-link {
     text-decoration:none;
-    background-color:rgb(197, 197, 184);
+    background-color:blue;
     color:black;
     border-radius: 10%;
     margin-bottom: 1px;
@@ -132,7 +132,8 @@ nav {
 .submenu {
     display: none;
     position: absolute;
-    padding: 5px;
+
+    padding: 5px;     
 }
 
 /* Mostrar el submenú al pasar el mouse sobre el elemento padre */
@@ -369,33 +370,137 @@ span  {
 **/
 
 /* CSS para "nosotros" */
-.equipo {
+.gridNosotros {
     display: grid;
-    grid-template-rows: .05fr 0.25fr 0.25fr;
     justify-content: space-evenly;
-    grid-template-columns: repeat(4, 1fr);
+    width: 80fr;
+    grid-template-columns: repeat(auto-fit, 250px);
     grid-gap: 50px;
-    padding: 20px;
-    margin: auto;
-    width: 500px;
-    height: 500px;    
+    margin: 50px 50px 100px 50px; 
 }
 
 .persona {
-    background-color: orange;
+    background-color: rgb(197, 197, 184);
     text-align: center;
-    width: 250px;
+    
 }
 
 .perfil{
     background-color: blueviolet;
-    width: 250px;
-    height: 250px;
+    height: 200px;
 }
 
 .descripcion{
-   text-align:justify; 
+    background-color:rgb(197, 197, 184);
+    text-align:justify; 
+    padding: 10px;
 }
+
+
+/*CARRUSEL index*/
+.carrusel{
+    width: 436px; 
+    height: 402px;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.carrusel ul{
+    display: flex; /*Todas las imágenes en línea*/
+    padding: 0;
+    width: 400%; /*Porque son 4 imágenes*/
+    animation: slide 16s infinite alternate ease-in-out; /*16seg son 4seg por img*/
+}
+
+.carrusel li{
+    list-style: none;
+    position: relative; /*Para poder poner el texto dentro de la imagen*/
+}
+
+.carrusel img {
+    width: 100%;
+}
+
+/*Carrusel visión*/
+
+#vision{
+    width: 960px;
+    height: 540px;
+    overflow: hidden;
+}
+
+#vision ul{
+    display: flex; /*Todas las imágenes en línea*/
+    padding: 0;
+    width: 400%; /*Porque son 4 imágenes*/
+    animation: slide 16s infinite alternate ease-in-out; /*16seg son 4seg por img*/
+}
+
+#vision li{
+    list-style: none;
+    position: relative; /*Para poder poner el texto dentro de la imagen*/
+}
+
+
+#vision img{
+    width: 960px;
+    height: 540px;
+}
+
+
+.texto {
+    position: absolute;
+    text-align: center;
+    padding: 0 250 px;
+    top: 100px;
+    color: black;
+}
+
+.texto p{
+    font-size: 40px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+
+
+/*Animación para q el carrusel gire automáticamente*/
+@keyframes slide {
+    0%  {margin-left: 0;}
+    20%  {margin-left: 0;}
+
+    25%  {margin-left: -100%;}
+    45%  {margin-left: -100%;}
+
+    50%  {margin-left: -200%;}
+    70%  {margin-left: -200%;}
+
+    75%  {margin-left: -300%;}
+    100%  {margin-left: -300%;}
+}
+
+/*Haciéndolo responsive*/
+@media(max-width: 991px) {
+
+    body {
+        padding: 30px;
+    };
+
+    .carrusel {
+        width:100%;
+    }
+
+    .texto {
+        top: 50px;
+        padding: 0 25px;
+    }
+
+    .texto p{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
+
 
 /**FOOTER**/
 .footer {
