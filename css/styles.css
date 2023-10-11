@@ -48,7 +48,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
    /* font-family: 'PT Sans Narrow', sans-serif;*/
    background-color: var(--grisoscuro);
-   /* acomoda el footer al final del texto pero también abajo de la página */
+   /* colabora para acomodar el footer al final del texto pero también abajo de la página y el body siempre ocupa como mínimo toda la página, no queda a mitad aunque el texto sea corto*/
    display: grid;
    min-height: 100vh;
    grid-template-rows: auto 1fr auto;
