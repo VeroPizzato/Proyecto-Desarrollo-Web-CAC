@@ -509,11 +509,8 @@ span  {
 
 
 /**FOOTER**/
-.footer {
-    @media {width: 100%;}
-        
-    }
-   /* width: 100vw; */
+.footer {    
+    width: 100vw;
     margin-top: auto;
     margin-bottom: 0px;
     text-align: center;
