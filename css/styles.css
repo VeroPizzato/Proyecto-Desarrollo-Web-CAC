@@ -99,7 +99,7 @@ h1, h2, h3 {
 }
 
 .navegacion-principal a:hover {
-    background-color: var( --arg);
+    background-color: var( --turquesa);
     color: var(--oscuro) ;
     transform: scale(1.08);
 }
@@ -172,7 +172,7 @@ nav {
 }
 
 span  {
-    color: var(--arg);
+    color: var(--turquesa);
     font-size: 1.5em;
 }
 
@@ -586,7 +586,12 @@ filter: none;
 .linea_derechos{
     font-size: xx-small;
 }
-
+ /* sucursales */
+ .sucursal{
+    text-align: center;
+    margin-top: 50px;
+ }
+ 
 /* IMAGENES FLOTA CON GRID **/
 .imgFlota{
     max-width: 250px;
