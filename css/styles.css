@@ -181,6 +181,7 @@ span  {
     width: 100vmax;
     height: 210px;
 }
+
 /**FORMULARIO**/
 .formulario {
     margin: 0 auto;
@@ -509,7 +510,10 @@ span  {
 
 /**FOOTER**/
 .footer {
-    width: 100vw;
+    @media {width: 100%;}
+        
+    }
+   /* width: 100vw; */
     margin-top: auto;
     margin-bottom: 0px;
     text-align: center;
