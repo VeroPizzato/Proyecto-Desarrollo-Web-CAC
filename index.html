@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto Ar</title>
     <link rel="shortcut icon" href="img/logo/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="./css/nomalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
@@ -73,58 +72,63 @@
                
         <h2>Dejanos tus datos y te contactamos</h2>             
         <section class="formulario">
-            <form class="formulario-desplegable">
-                <fieldset>
-                    <legend class="leyenda">Completá el Formulario según tus preferencias:</legend>
-                    <div class="contenedor-inputs">
-                        <div class="inputs">
-                            <label>Nombre</label>
-                            <input class="input-text" type="text" placeholder="Tu Nombre">
+            <button id="mostrarFormulario" class="mostrar-boton">Mostrar Formulario</button>
+            <div id="formularioContainer" style="display: none;">
+                <form id="form">
+                    <fieldset>
+                        <legend class="leyenda">Completá el Formulario según tus preferencias:</legend>
+                        <div class="contenedor-inputs">
+                            <div class="inputs">
+                                <label>Nombre</label>
+                                <input class="input-text" type="text" id="text" placeholder="Tu Nombre">
+                            </div>
+                            <div class="inputs">
+                                <label>Número</label>
+                                <input class="input-text" type="number" id="number" placeholder="Tu Número de contacto">
+                            </div>
+                            <div class="inputs">
+                                <label>E-mail</label>
+                                <input class="input-text" type="email" id="email" placeholder="Tu Correo electrónico">
+                            </div>
+                            <div class="inputs">
+                                <label>Provincia de retiro</label>
+                                <select class="input-text" id="provincia-retiro">
+                                    <option value="Elije una provincia">Elije una provincia</option>
+                                </select>
+                            </div>
+                            <div class="inputs">
+                                <label>Municipio de retiro</label>
+                                <select class="input-text" id="municipio-retiro">
+                                    <option value="Elije un municipio">Elije un municipio</option>
+                                </select>
+                            </div>
+                            <div class="inputs">
+                                <label>Localidad de retiro</label>
+                                <select class="input-text" id="localidad-retiro">
+                                    <option value="Elije una localidad">Elije una localidad</option>
+                                </select>
+                            </div>
+                            <div class="inputs">
+                                <label>Fecha de Salida</label>
+                                <input class="input-text" type="date" id="fecha-salida" placeholder="Tu fecha de salida">
+                            </div>
+                            <div class="inputs">
+                                <label>Fecha de Llegada</label>
+                                <input class="input-text" type="date" id="fecha-llegada" placeholder="Tu fecha de llegada">
+                            </div>
+                            <div class="inputs">
+                                <label>Mensaje</label>
+                                <textarea class="input-text textarea" id="mensaje" placeholder="Dejá tu comentario"></textarea>
+                            </div>
                         </div>
-                        <div class="inputs">
-                            <label>Número</label>
-                            <input class="input-text" type="number" placeholder="Tu Número de contacto">
+                        <div class="alinear-derecha">
+                            <button class="boton-enviar" type="submit">Buscar Auto</button>
+                            <p class="warnings" id="warnings"></p>
                         </div>
-                        <div class="inputs">
-                            <label>E-mail</label>
-                            <input class="input-text" type="email" placeholder="Tu Correo electrónico">
-                        </div>
-                        <div class="inputs">
-                            <label>Provincia de retiro</label>
-                            <select class="input-text" id="provincia-retiro">
-                                <option value="Elije una provincia">Elije una provincia</option>
-                            </select>
-                        </div>   
-                        <div class="inputs">
-                            <label>Municipio de retiro</label>
-                            <select class="input-text" id="municipio-retiro">
-                                <option value="Elije un municipio">Elije un municipio</option>
-                            </select>
-                        </div>   
-                        <div class="inputs">
-                            <label>Localidad de retiro</label>
-                            <select class="input-text" id="localidad-retiro">
-                                <option value="Elije una localidad">Elije una localidad</option>
-                            </select>
-                        </div>                       
-                        <div class="inputs">
-                            <label>Fecha de Salida</label>
-                            <input class="input-text" type="date" placeholder="Tu fecha de salida">
-                        </div>
-                        <div class="inputs">
-                            <label>Fecha de Llegada</label>
-                            <input class="input-text" type="date" placeholder="Tu fecha de llegada">
-                        </div>
-                        <div class="inputs">
-                            <label>Mensaje</label>
-                            <textarea class="input-text textarea" placeholder="Dejá tu comentario"></textarea>
-                        </div>
-                    </div>
-                    <div class="alinear-derecha">
-                        <button class="boton-enviar" type="submit">Buscar Auto</button>
-                    </div>
-                </fieldset>
-            </form>
+                    </fieldset>
+                </form>
+        
+            </div>
         </section>
     </main>
 

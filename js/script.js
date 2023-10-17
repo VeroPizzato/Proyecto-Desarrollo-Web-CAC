@@ -64,3 +64,64 @@ provinciaSeleccionada.addEventListener("change", e => {
 municipioSeleccionado.addEventListener("change", e => {
     localidad(e.target.value);     
 })
+
+/* Despliego el formulario del Index */
+
+const botonMostrar = document.getElementById("mostrarFormulario");
+const formularioContainer = document.getElementById("formularioContainer");
+
+botonMostrar.addEventListener("click", () => {
+    if (formularioContainer.style.display === "none") {
+        formularioContainer.style.display = "block";
+    } else {
+        formularioContainer.style.display = "none";
+    }
+});
+
+/* Alerta para Validacion de Formulario index */
+const formulario = document.getElementById("form")
+const nombre = document.getElementById("text")
+const numero = document.getElementById("number")
+const email = document.getElementById("email")
+const fechaSalida = document.getElementById("fecha-salida")
+const fechaLlegada = document.getElementById("fecha-llegada")
+const mensaje = document.getElementById("mensaje")
+const alerta = document.getElementById("warnings")
+
+function numeroValido(numero) {
+  return !isNaN(numero);
+}
+
+formulario.addEventListener("submit", (e) => {
+    e.preventDefault(); // previene el envio del formulario por defecto
+    let alertas = [];
+  
+    // verifica si todos los campos están en blanco
+    if (
+      nombre.value === "" &&
+      numero.value === "" &&
+      email.value === "" &&
+      fechaSalida.value === "" &&
+      fechaLlegada.value === "" &&
+      mensaje.value === ""
+    ) {
+      alertas.push("No ha indicado ningún dato, por favor vuelva a intentarlo.");
+    } else {
+      if (nombre.value.length < 6) {
+        alertas.push("El nombre es muy corto");
+      }
+      if (!email.value.includes("@")) {
+        alertas.push("La dirección de correo electrónico debe contener el símbolo '@'.");
+      }
+      if (!numeroValido(numero.value)) {
+        alertas.push("El valor ingresado no es un numero valido");
+      }
+    }
+  
+    alerta.innerHTML = alertas.join(', ');
+  
+    // Si no hay alertas, el formulario se envia igual
+    if (alertas.length === 0) {
+      formulario.submit(); // envia el formulario
+    }
+  });

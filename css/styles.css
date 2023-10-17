@@ -512,7 +512,7 @@ span  {
 
 /**FOOTER**/
 .footer {    
-    @media {max-width: 100%;}
+    max-width: 100%;
     margin-top: auto;
     margin-bottom: 0px;
     text-align: center;
@@ -522,6 +522,7 @@ span  {
     background-color: #000000;
 
 }
+
 /* ubicación dentro del footer */
 .redes-container{
 display: flex;
@@ -873,3 +874,29 @@ filter: none;
         ;
     }
 }
+
+/* Alerta para Validacion de Formulario index */
+.warnings {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-weight: 700;
+}
+
+/* Boton mostrar de Formulario Index */
+.mostrar-boton {
+    background-color:var(--anaranjado);
+    color: var(--beige);
+    font-weight: 700;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 auto;
+    display: block;
+}
+
