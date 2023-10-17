@@ -124,4 +124,7 @@ formulario.addEventListener("submit", (e) => {
     if (alertas.length === 0) {
       formulario.submit(); // envia el formulario
     }
+
+    console.log("sarasa")
   });
+
