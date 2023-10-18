@@ -818,7 +818,7 @@ filter: none;
     }
 }
 
-@media (min-width: 412px) and (max-width: 674px) {
+@media (min-width: 280px) and (max-width: 674px) {
     .grid-container-autos{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(9, 1fr);
@@ -837,7 +837,7 @@ filter: none;
     }
 }
 
-@media (min-width: 412px) and (max-width: 674px) {
+@media (min-width: 280px) and (max-width: 674px) {
     .grid-container-camionetas{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(9, 1fr);
@@ -856,7 +856,7 @@ filter: none;
     }
 }
 
-@media (min-width: 412px) and (max-width: 674px) {
+@media (min-width: 280px) and (max-width: 674px) {
     .grid-container-furgones{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(9, 1fr);

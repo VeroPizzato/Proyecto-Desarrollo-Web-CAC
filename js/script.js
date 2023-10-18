@@ -125,6 +125,6 @@ formulario.addEventListener("submit", (e) => {
       formulario.submit(); // envia el formulario
     }
 
-    console.log("sarasa")
+    
   });
 
