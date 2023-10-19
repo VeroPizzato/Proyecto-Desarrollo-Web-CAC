@@ -73,6 +73,7 @@ const formularioContainer = document.getElementById("formularioContainer");
 botonMostrar.addEventListener("click", () => {
     if (formularioContainer.style.display === "none") {
         formularioContainer.style.display = "block";
+        botonMostrar.style.display = "none";
     } else {
         formularioContainer.style.display = "none";
     }
@@ -105,18 +106,19 @@ formulario.addEventListener("submit", (e) => {
         mensaje.value === "") {
           alertas.push("Por favor, complete todos los campos del formulario.");
     }    
-     
-    for (var i=0; i<nombre.value.length; i++){
-      var charCode = nombre.value.charCodeAt(i);       
-      if ((charCode < 65 || charCode > 90) && (charCode < 97 || charCode > 122) && charCode !== 32) // no es mayuscula ni minuscula ni espacio en blanco
-        alertas.push("El nombre solo puede contener letras y espacios");
-        break;
-    }
-    if (!email.value.includes("@")) {
-      alertas.push("La dirección de correo electrónico debe contener el símbolo '@'.");
-    }
-    if (!numeroValido(numero.value)) {
-      alertas.push("El valor ingresado no es un numero valido");
+    else{
+      for (var i=0; i<nombre.value.length; i++){
+        var charCode = nombre.value.charCodeAt(i);       
+        if ((charCode < 65 || charCode > 90) && (charCode < 97 || charCode > 122) && charCode !== 32) // no es mayuscula ni minuscula ni espacio en blanco
+          alertas.push("El nombre solo puede contener letras y espacios");
+          break;
+      }
+      if (!email.value.includes("@")) {
+        alertas.push("La dirección de correo electrónico debe contener el símbolo '@'.");
+      }
+      if (!numeroValido(numero.value)) {
+        alertas.push("El valor ingresado no es un numero valido");
+      }
     }
      
     alerta.innerHTML = alertas.join(', ');
