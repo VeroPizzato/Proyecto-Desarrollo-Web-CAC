@@ -96,32 +96,34 @@ formulario.addEventListener("submit", (e) => {
     e.preventDefault(); // previene el envio del formulario por defecto
     let alertas = [];
   
-    // verifica si todos los campos están en blanco
-    if (
-      nombre.value === "" &&
-      numero.value === "" &&
-      email.value === "" &&
-      fechaSalida.value === "" &&
-      fechaLlegada.value === "" &&
-      mensaje.value === ""
-    ) {
-      alertas.push("No ha indicado ningún dato, por favor vuelva a intentarlo.");
-    } else {
-      if (nombre.value.length < 6) {
-        alertas.push("El nombre es muy corto");
-      }
-      if (!email.value.includes("@")) {
-        alertas.push("La dirección de correo electrónico debe contener el símbolo '@'.");
-      }
-      if (!numeroValido(numero.value)) {
-        alertas.push("El valor ingresado no es un numero valido");
-      }
+    // verifica que todos los campos no están en blanco
+    if (nombre.value === "" || 
+        numero.value === "" || 
+        email.value === "" || 
+        fechaSalida.value === "" || 
+        fechaLlegada.value === "" || 
+        mensaje.value === "") {
+          alertas.push("Por favor, complete todos los campos del formulario.");
+    }    
+     
+    for (var i=0; i<nombre.value.length; i++){
+      var charCode = nombre.value.charCodeAt(i);       
+      if ((charCode < 65 || charCode > 90) && (charCode < 97 || charCode > 122) && charCode !== 32) // no es mayuscula ni minuscula ni espacio en blanco
+        alertas.push("El nombre solo puede contener letras y espacios");
+        break;
     }
-  
+    if (!email.value.includes("@")) {
+      alertas.push("La dirección de correo electrónico debe contener el símbolo '@'.");
+    }
+    if (!numeroValido(numero.value)) {
+      alertas.push("El valor ingresado no es un numero valido");
+    }
+     
     alerta.innerHTML = alertas.join(', ');
   
     // Si no hay alertas, el formulario se envia igual
     if (alertas.length === 0) {
+      alert("Formulario enviado correctamente.");
       formulario.submit(); // envia el formulario
     }
 
