@@ -124,11 +124,16 @@ formulario.addEventListener("submit", (e) => {
     alerta.innerHTML = alertas.join(', ');
   
     // Si no hay alertas, el formulario se envia igual
-    if (alertas.length === 0) {
-      alert("Formulario enviado correctamente.");
-      formulario.submit(); // envia el formulario
+    if (alertas.length === 0) {  
+        Swal.fire({
+            title: 'Formulario enviado correctamente.',                           
+            icon: 'success',  
+            confirmButtonColor: '#a52a2a',                                          
+            confirmButtonText: 'Aceptar',
+            showConfirmButton: true
+        })          
+        formulario.submit(); // envia el formulario          
     }
-
-    
+        
   });
 
