@@ -886,8 +886,8 @@ margin-bottom: 50px;
 
 /* Boton mostrar de Formulario Index */
 .mostrar-boton {
-    background-color:var(--anaranjado);
-    color: var(--beige);
+    background-color:var(--turquesa);
+    color: var(--oscuro);
     font-weight: 700;
     padding: 10px 20px;
     border: none;
