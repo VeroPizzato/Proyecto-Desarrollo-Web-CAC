@@ -589,6 +589,12 @@ filter: none;
     text-align: center;
     margin-top: 50px;
  }
+ .descripcion_sucursal{
+margin-bottom: 50px;
+ }
+ .ciudad{
+ color: #0077B5;
+ }
  
 /* IMAGENES FLOTA CON GRID **/
 .imgFlota{
