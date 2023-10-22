@@ -634,6 +634,7 @@ margin-bottom: 50px;
     background-repeat: no-repeat;
     text-align: center;
     transition: 0.5s;
+    
 }
 
 .imagen-grid:hover{
@@ -650,7 +651,8 @@ margin-bottom: 50px;
     "imagen7 imagen8 imagen9"
     ;
     margin: 18px auto 32px;
-    width: 800px;
+    grid-gap: 100px;
+    width: 1000px;
     height: auto;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.319);
@@ -694,7 +696,8 @@ margin-bottom: 50px;
     "imagen16 imagen17 imagen18"
     ;
     margin: 18px auto 32px;
-    width: 800px;
+    grid-gap: 100px;
+    width: 1000px;
     height: auto;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.319);
@@ -738,7 +741,8 @@ margin-bottom: 50px;
     "imagen25 imagen26 imagen27"
     ;
     margin: 18px auto 32px;
-    width: 800px;
+    grid-gap: 100px;
+    width: 1000px;
     height: auto;
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.319);
