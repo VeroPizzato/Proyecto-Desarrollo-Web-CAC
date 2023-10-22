@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+<<<<<<< HEAD
     <link rel="shortcut icon" href="/img/logo/favicon.ico"
     <link rel="stylesheet" href="../css/normalize.css">
+=======
+    <link rel="shortcut icon" href="../img/logo/favicon.ico">    
+>>>>>>> 0e29b8b575aac880b64a6daa3fa622290c04517d
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7/dist/sweetalert2.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -37,32 +42,33 @@
     </header>
 
     <main>
-        <h1>Contactanos</h1> 
+        <h1>Contactanos</h1>         
         <section class="formulario">
-            <form class="formulario-desplegable">
+            <form id="form2">
                 <fieldset>
                     <legend class="leyenda">Indique sus datos personales:</legend>
                     <div class="contenedor-inputs-contacto">
                         <div class="inputs-contacto">
                             <label>Nombre</label>
-                            <input class="input-text" type="text" placeholder="Tu Nombre">
+                            <input class="input-text" type="text" id="text"  placeholder="Tu Nombre">
                         </div>
                         <div class="inputs-contacto">
                             <label>Número</label>
-                            <input class="input-text" type="number" placeholder="Tu Número de contacto">
+                            <input class="input-text" type="number" id="number" placeholder="Tu Número de contacto">
                         </div>
                         <div class="inputs-contacto">
                             <label>E-mail</label>
-                            <input class="input-text" type="email" placeholder="Tu Correo electrónico">
+                            <input class="input-text" type="email" id="email" placeholder="Tu Correo electrónico">
                         </div>
 
                         <div class="inputs-contacto">
                             <label>Mensaje</label>
-                            <textarea class="input-text textarea" placeholder="Dejá tu comentario"></textarea>
+                            <textarea class="input-text textarea" id="mensaje" placeholder="Dejá tu comentario"></textarea>
                         </div>
                     </div>
                     <div class="alinear-derecha">
                         <button class="boton-enviar" type="submit">Enviar</button>
+                        <p class="warnings" id="warnings2"></p>
                     </div>
                 </fieldset>
             </form>
@@ -88,6 +94,8 @@
             </ul>
         </div>   
         <div class="linea_derechos"><p>Todos los derechos Reservados &copy;2023 - Autos AR</p></div> 
-</footer>
+    </footer>
+    <script src="../js/script.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7/dist/sweetalert2.all.min.js"></script>
 </body>
 </html>
