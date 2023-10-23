@@ -427,6 +427,25 @@ span  {
     padding: 10px;
 }
 
+@media (min-width: 675px) and (max-width: 800px) {
+    .gridNosotros{
+        justify-content: space-evenly;
+        width: 600px;
+        grid-template-columns: repeat(2, 1fr);        
+        grid-gap: 50px;
+        margin: 50px 50px 100px 50px;       
+    }
+}
+
+@media (min-width: 280px) and (max-width: 674px) {
+    .gridNosotros{
+        justify-content: space-evenly;
+        width: 300px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        margin: 50px 50px 100px 50px; 
+    }
+}
 
 /*CARRUSEL index*/
 .carrusel{
