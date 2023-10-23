@@ -107,14 +107,19 @@ formulario1?.addEventListener("submit", (e) => {
         fechaLlegada.value === "") {
           alertas.push("Por favor, complete todos los campos del formulario.");
     }   
-        
-    alerta.innerHTML = alertas.join(', ');
+
+    if (alertas.length > 0) {
+        alerta.textContent = alertas.join(', ');
+        alerta.style.display = "block"; // muestra el elemento de alerta
+    } else {
+        alerta.style.display = "none"; // oculta el elemento de alerta si no hay errores
+    }
   
     // Si no hay alertas, el formulario se envia 
     if (alertas.length === 0) {  
         Swal.fire({
             title: 'Formulario enviado correctamente.',                          
-            icon: 'warning',            
+            icon: 'success',            
             confirmButtonColor: '#8486a6',                                           
             confirmButtonText: 'Aceptar',
             showConfirmButton: true,
@@ -137,11 +142,12 @@ formulario1?.addEventListener("submit", (e) => {
           alertas.push("Por favor, complete todos los campos del formulario.");
     }    
     else{
-      for (var i=0; i<nombre.value.length; i++){
-        var charCode = nombre.value.charCodeAt(i);       
+      for (let i=0; i<nombre.value.length; i++){
+        let charCode = nombre.value.charCodeAt(i);       
         if ((charCode < 65 || charCode > 90) && (charCode < 97 || charCode > 122) && charCode !== 32) // no es mayuscula ni minuscula ni espacio en blanco
-          alertas.push("El nombre solo puede contener letras y espacios");
+        {alertas.push("El nombre solo puede contener letras y espacios");
           break;
+         }
       }
       if (!email.value.includes("@")) {
         alertas.push("La dirección de correo electrónico debe contener el símbolo '@'.");
@@ -151,13 +157,20 @@ formulario1?.addEventListener("submit", (e) => {
       }
     }
      
-    alerta2.innerHTML = alertas.join(', ');
+    if (alertas.length > 0) {
+        alerta2.textContent = alertas.join(', ');
+        alerta2.style.display = "block"; // muestra el elemento de alerta
+    } else {
+        alerta2.style.display = "none"; // oculta el elemento de alerta si no hay errores
+    }
+  
+
   
     // Si no hay alertas, el formulario se envia 
     if (alertas.length === 0) {  
         Swal.fire({
             title: 'Formulario enviado correctamente.',                          
-            icon: 'warning',            
+            icon: 'success',            
             confirmButtonColor: '#8486a6',                                           
             confirmButtonText: 'Aceptar',
             showConfirmButton: true,
