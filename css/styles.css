@@ -331,18 +331,11 @@ span  {
     text-align: center;
     border: none;
     width: auto;
-
 }
+
 @media (max-width: 768px) {
     .boton-enviar{
         width: 100%;
-    }
-}
-
-@media (min-width: 768px) {
-    .alinear-derecha {
-        display:flex;
-        justify-content: flex-end;
     }
 }
 
@@ -931,13 +924,18 @@ margin-bottom: 50px;
 
 /* Alerta para Validacion de Formulario index y contacto */
 .warnings {
+    display: none; /* Oculta el elemento de alerta inicialmente */
     width: 200px;
     text-align: center;
     margin: auto;
     color: red;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding: 15px;
     font-weight: 700;
+    background-color: #f8d7da;
+    border: 1px solid #721c24;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
 }
 
 /* Boton mostrar de Formulario Index */
