@@ -1,6 +1,5 @@
 :root {
     --azulado: #0097A7;
-    --anaranjado: rgb(245, 165, 66);
     --blanco: #FFFFFF;
     --oscuro: rgb(28, 25, 49);
     --arg: dodgerblue;
@@ -13,9 +12,6 @@
     --instagram: #e4405f;
     --linkedin: #0077B5;
     --whatsapp: #25D366;
-
-
-
 }
 
 /**GENERAL**/
@@ -119,11 +115,6 @@ nav {
     border-radius: 10%;
     margin-bottom: 1px;
 }
-/* .nav-link1:hover {
-    color: darkorange;
-    font-weight: bold;
-} */
-
 
 .menu {
     position: relative;
@@ -150,8 +141,6 @@ nav {
 
 /**IMAGEN PRINCIPAL Y TITULO**/
 .imagenfondo {
-    /* background-image: url(../img/imagendefondo2.jpg); */
-    /* background-image: url(../img/fondo_ruta.webp); */
     background-image: url(../img/ruta_montañas.jpg); 
     height: 450px;
     background-repeat: no-repeat;
@@ -160,8 +149,8 @@ nav {
 }
 
 .espacio-nosotros{
-    width: 100%;
-    height: 450px;
+    max-width: 100%;
+    height: auto;
     background-image: url(../img/fondo_ruta.webp);
     background-color: rgba(0 0 0 / 20%);
     background-repeat: no-repeat;
@@ -344,31 +333,6 @@ span  {
 }
 
 
-/**FLOTA DE AUTOS**/
-/*
-.imagen-auto {
-    width: 30%;
-    height: 30%;
- }
-
-/*.flota-autos {
-    text-align: center;
-    gap: 20px;
-    justify-content: space-between;
-}*/
-
-/*.flota-autos p {
-    position: relative;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-
-/*.imagen-auto {
-   width: 20%;
-   height: 20%;
-}*/
-
-
 /* Mostrar el submenú al pasar el mouse sobre el elemento padre */
 .menu:hover .submenu {
     display: block;
@@ -380,18 +344,6 @@ span  {
     }
 }
 
-
-/** ESTO NO SE QUE HACE ACA???
-.contenedor-formulario {
-    margin: 0 auto;
-    text-align: center;
-    border-radius: 1%;
-    border: 1px solid #666666;
-    width: 500px;
-    position: relative;
-
-}
-**/
 
 /* CSS para "nosotros" */
 .gridNosotros {
@@ -601,9 +553,7 @@ filter: none;
 .redes-container ul li .instagram:hover{
     background: var(--instagram);
 }
-/* .redes-container ul li .linkedin:hover{
-    background: var(--linkedin);
-} */
+
 .redes-container ul li .whatsapp:hover{
     background: var(--whatsapp);
 }
@@ -624,7 +574,6 @@ filter: none;
     .navfooter a:hover{
      color: #FFFFFF;
     }
-         
 
 .linea_derechos{
     font-size: xx-small;
@@ -632,7 +581,7 @@ filter: none;
  /* sucursales */
  .sucursal{
     text-align: center;
-    /* margin-top: 50px; */
+    
  }
  .descripcion_sucursal{
 margin-bottom: 50px;
