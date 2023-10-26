@@ -143,7 +143,7 @@ nav {
 
 .espacio-nosotros{
     max-width: 100%;
-    height: auto;
+    height: 450px;
     background-image: url(../img/fondo_ruta.webp);
     background-color: rgba(0 0 0 / 20%);
     background-repeat: no-repeat;
