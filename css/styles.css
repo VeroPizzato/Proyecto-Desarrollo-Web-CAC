@@ -24,15 +24,10 @@ html {
     box-sizing: inherit;
 }
 
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@200&family=Roboto+Slab&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 .tipografia{
-    font-family: 'Roboto', sans-serif;
-    font-family: b'Roboto Mono', monospace;
-    font-family: 'Roboto Slab', serif;
-    font-family: 'Rubik', sans-serif;
-    text-align: center;
+    font-family: 'Montserrat', sans-serif;   
 }
 
 *{
@@ -40,9 +35,7 @@ html {
     padding: 0;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-   /* font-family: 'PT Sans Narrow', sans-serif;*/
+body {   
    background-color: var(--grisoscuro);
    /* colabora para acomodar el footer al final del texto pero también abajo de la página y el body siempre ocupa como mínimo toda la página, no queda a mitad aunque el texto sea corto*/
    display: grid;
@@ -584,7 +577,9 @@ filter: none;
     
  }
  .descripcion_sucursal{
-margin-bottom: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;    
  }
  .ciudad{
  color: #0077B5;

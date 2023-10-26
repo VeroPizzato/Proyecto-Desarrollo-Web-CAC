@@ -8,8 +8,8 @@
     <link rel="shortcut icon" href="img/logo/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7/dist/sweetalert2.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7/dist/sweetalert2.min.css" rel="stylesheet">    
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 
@@ -17,30 +17,30 @@
     <header>
         <img src="img/logo/logo.jpeg" alt="logo" class="logo">
         <nav class="navegacion-principal">
-            <a class="nav-link" href="./index.html">Inicio</a></li>
+            <a class="nav-link tipografia" href="./index.html">Inicio</a></li>
             <div class="menu">
-                <a class="nav-link" href="./pages/flota.html">Nuestra Flota</a>
+                <a class="nav-link tipografia" href="./pages/flota.html">Nuestra Flota</a>
                 <div class="submenu">
-                    <a class="nav-link" href="./pages/flota.html#autos">Autos</a>
-                    <a class="nav-link" href="./pages/flota.html#camionetas">Camionetas</a>
-                    <a class="nav-link" href="./pages/flota.html#furgones">Furgones</a>
+                    <a class="nav-link tipografia" href="./pages/flota.html#autos">Autos</a>
+                    <a class="nav-link tipografia" href="./pages/flota.html#camionetas">Camionetas</a>
+                    <a class="nav-link tipografia" href="./pages/flota.html#furgones">Furgones</a>
                 </div>
             </div>
             <div class="menu">
-                <a class="nav-link" href="./pages/sucursales.html">Sucursales</a>
+                <a class="nav-link tipografia" href="./pages/sucursales.html">Sucursales</a>
                 <div class="submenu">
-                    <a class="nav-link" href="./pages/sucursales.html#centro">Centro</a>
-                    <a class="nav-link" href="./pages/sucursales.html#cuyo">Cuyo</a>
-                    <a class="nav-link" href="./pages/sucursales.html#litoral">Litoral</a>
-                    <a class="nav-link" href="./pages/sucursales.html#norte">Norte</a>
-                    <a class="nav-link" href="./pages/sucursales.html#patagonia">Patagonia</a>
+                    <a class="nav-link tipografia" href="./pages/sucursales.html#centro">Centro</a>
+                    <a class="nav-link tipografia" href="./pages/sucursales.html#cuyo">Cuyo</a>
+                    <a class="nav-link tipografia" href="./pages/sucursales.html#litoral">Litoral</a>
+                    <a class="nav-link tipografia" href="./pages/sucursales.html#norte">Norte</a>
+                    <a class="nav-link tipografia" href="./pages/sucursales.html#patagonia">Patagonia</a>
                 </div>
             </div>
             <div class="menu">
-                <a class="nav-link" href="./pages/nosotros.html">Quienes Somos</a>
+                <a class="nav-link tipografia" href="./pages/nosotros.html">Quienes Somos</a>
                 <div class="submenu">
-                    <a class="nav-link" href="./pages/nosotros.html#equipo">Equipo</a>
-                    <a class="nav-link" href="./pages/nosotros.html#proposito">Nuestra visión</a>
+                    <a class="nav-link tipografia" href="./pages/nosotros.html#equipo">Equipo</a>
+                    <a class="nav-link tipografia" href="./pages/nosotros.html#proposito">Nuestra visión</a>
                 </div>
             </div>
             <a class="nav-link" href="./pages/contacto.html">Contacto</a>
@@ -50,7 +50,7 @@
     <main>
         <section class="imagenfondo">
             <div class="titulo-h1">
-                <h1>Autos <span>AR</span> - Alquiler de Autos</h1>
+                <h1 class="tipografia">Autos <span>AR</span> - Alquiler de Autos</h1>
             </div>
         </section>
 
@@ -71,16 +71,16 @@
             </ul>
         </div>
 
-        <h2>Buscá, compará y ahorrá</h2>
+        <h2 class="tipografia">Buscá, compará y ahorrá</h2>
         <section class="formulario">
-            <button id="mostrarFormulario" class="mostrar-boton">Mostrar Formulario</button>
+            <button id="mostrarFormulario" class="mostrar-boton tipografia">Mostrar Formulario</button>
             <div id="formularioContainer" style="display: none;">
                 <form id="form1">
                     <fieldset>
-                        <legend class="leyenda">Completá el Formulario según tus preferencias:</legend>
+                        <legend class="tipografia">Completá el Formulario según tus preferencias:</legend>
                         <div class="contenedor-inputs">
                             <div class="inputs">
-                                <label>Provincia de retiro</label>
+                                <label class="tipografia">Provincia de retiro</label>
                                 <select class="input-text" id="provincia-retiro">
                                     <option value="Elije una provincia">Elige una provincia</option>
                                 </select>
@@ -92,7 +92,7 @@
                                 </select>
                             </div>
                             <div class="inputs">
-                                <label>Localidad de retiro</label>
+                                <label class="tipografia">Localidad de retiro</label>
                                 <select class="input-text" id="localidad-retiro">
                                     <option value="Elije una localidad">Elige una localidad</option>
                                 </select>
@@ -103,13 +103,13 @@
                                     placeholder="Tu fecha de salida">
                             </div>
                             <div class="inputs">
-                                <label>Fecha de Llegada</label>
+                                <label class="tipografia">Fecha de Llegada</label>
                                 <input class="input-text" type="date" id="fecha-llegada"
                                     placeholder="Tu fecha de llegada">
                             </div>
                         </div>
                         <div class="alinear-derecha mensaje-enviar">
-                            <button class="boton-enviar" type="submit">Buscar Auto</button>
+                            <button class="boton-enviar tipografia" type="submit">Buscar Auto</button>
                             <p class="warnings" id="warnings"></p>
                         </div>
                     </fieldset>
