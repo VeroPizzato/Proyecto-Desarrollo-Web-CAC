@@ -41,6 +41,7 @@ body {
    display: grid;
    min-height: 100vh;
    grid-template-rows: auto 1fr auto;
+   height: 100%;
 }
 
 header{
@@ -345,7 +346,7 @@ span  {
     width: 80fr;
     grid-template-columns: repeat(auto-fit, 250px);
     grid-gap: 50px;
-    margin: 50px 50px 100px 50px; 
+    margin: 50px 50px 50px 50px; 
 }
 
 .persona {
@@ -353,12 +354,6 @@ span  {
     text-align: center;
     
 }
-
-.perfil{
-    background-color: blueviolet;
-    height: 200px;
-}
-
 
 .descripcion{
     background-color:rgb(197, 197, 184);
@@ -411,31 +406,28 @@ span  {
 }
 
 /*Carrusel visión*/
-
 #vision{
-    width: 960px;
-    height: 540px;
+    width: 900px;
+    height: 550px;
+    margin: 50px auto 0;
     overflow: hidden;
-}
+} 
 
 #vision ul{
     display: flex; /*Todas las imágenes en línea*/
     padding: 0;
     width: 400%; /*Porque son 4 imágenes*/
     animation: slide 16s infinite alternate ease-in-out; /*16seg son 4seg por img*/
-}
+  }
 
 #vision li{
-    list-style: none;
+    list-style: none; 
     position: relative; /*Para poder poner el texto dentro de la imagen*/
 }
 
-
 #vision img{
-    width: 960px;
-    height: 540px;
+    width: 100%;   
 }
-
 
 .texto {
     position: absolute;
@@ -443,6 +435,7 @@ span  {
     padding: 0 250 px;
     top: 100px;
     color: black;
+    text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
 }
 
 .texto p{
@@ -450,8 +443,6 @@ span  {
     margin-bottom: 35px;
     text-align: center;
 }
-
-
 
 /*Animación para q el carrusel gire automáticamente*/
 @keyframes slide {
@@ -478,7 +469,7 @@ span  {
 
     .carrusel {
         width:100%;
-       
+        height: auto;
     }
 
     .texto {
@@ -493,9 +484,9 @@ span  {
     }
 
     #vision {
-       display: none;
-       
-    }
+        width:100%;
+        height: auto;
+    } 
   
 }
 
