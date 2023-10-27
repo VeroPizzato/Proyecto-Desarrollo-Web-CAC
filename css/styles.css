@@ -359,6 +359,7 @@ span  {
     height: 200px;
 }
 
+
 .descripcion{
     background-color:rgb(197, 197, 184);
     text-align:justify; 
@@ -472,21 +473,30 @@ span  {
 
     body {
         padding: 30px;
+        
     }
 
     .carrusel {
         width:100%;
+       
     }
 
     .texto {
         top: 50px;
         padding: 0 25px;
+        
     }
 
     .texto p{
         font-size: 20px;
         margin-bottom: 15px;
     }
+
+    #vision {
+       display: none;
+       
+    }
+  
 }
 
 
