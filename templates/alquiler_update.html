@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Alquiler Nuevo</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../img/logo/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../css/styles.css"> -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="../img/logo/logo.jpeg" alt="logo" class="logo">
+        <nav class="navegacion-principal">
+            <a class="nav-link tipografia" href="../index.html">Inicio</a></li>
+            <div class="menu">
+                <a class="nav-link tipografia" href="../pages/flota.html">Nuestra Flota</a>
+                <div class="submenu">
+                    <a class="nav-link tipografia" href="../pages/flota.html#autos">Autos</a>
+                    <a class="nav-link tipografia" href="../pages/flota.html#camionetas">Camionetas</a>
+                    <a class="nav-link tipografia" href="../pages/flota.html#furgones">Furgones</a>
+                </div>
+            </div>
+            <a class="nav-link tipografia" href="../pages/sucursales.html">Sucursales</a>
+            <div class="menu">
+                <a class="nav-link tipografia" href="../pages/nosotros.html">Quienes Somos</a>
+                <div class="submenu">
+                    <a class="nav-link tipografia" href="../pages/nosotros.html#equipo">Equipo</a>
+                    <a class="nav-link tipografia" href="../pages/nosotros.html#proposito">Nuestra visión</a>
+                </div>
+            </div>
+            <a class="nav-link tipografia" href="../pages/contacto.html">Contacto</a>
+            <a class="nav-link tipografia" href="../pages/alquiler.html">Alquileres</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container" id="app">
+            <form
+                style="background-color: #8486a6; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.319); margin:10px auto ; width: 400px; padding: 20px;">
+                <h2>Editar Alquiler </h2>
+                <div class="mb-3">
+                    <label class="form-label" for="id">Id</label>
+                    <input type="number" name="id" id="id" disabled v-model="id">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" v-model="nombre">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="precio">Precio</label>
+                    <input type="number" name="precio" id="precio" v-model="precio">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="vehiculo">Vehiculo</label>
+                    <input type="text" name="vehiculo" id="vehiculo" v-model="vehiculo">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="fecha_desde">Fecha Desde</label>
+                    <input type="date" name="fecha_desde" id="fecha_desde" v-model="fecha_desde">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="fecha_hasta">Fecha Hasta</label>
+                    <input type="date" name="fecha_hasta" id="fecha_hasta" v-model="fecha_hasta">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="imagen">Imagen</label>
+                    <input type="text" name="imagen" id="imagen" v-model="imagen">
+                    <img width="100" :src="imagen" alt="">
+                </div>
+                <div class="d-flex justify-content-around align-items-center">
+                    <button type="button" class="btn custom-button" onclick="window.location.href='./alquileres.html'">CRUD</button>
+                    <button type="button" class="btn custom-button" v-on:click="modificar()">Grabar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="redes-container">
+            <ul>
+                <li> <a href="#" class="facebook"><img src="../img/redes/facebook-circle-logo-24.png"
+                            alt="Facebook"></a></li>
+                <li> <a href="#" class="instagram"><img src="../img/redes/instagram-alt-logo-24.png"
+                            alt="Instagram"></a></li>
+                <li> <a href="#" class="whatsapp"><img src="../img/redes/whatsapp-logo-24.png" alt="Whatsapp"></a></li>
+                <!-- Ajusta las rutas y extensiones de archivo según tus nombres de archivos y formatos -->
+            </ul>
+        </div>
+        <div class="navfooter">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/nosotros.html">Quienes somos</a></li>
+                <li><a href="../pages/sucursales.html">Sucursales</a></li>
+                <li><a href="../pages/flota.html"> Nuestra flota</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/alquiler.html">Alquileres</a></li>
+            </ul>
+        </div>
+        <div class="linea_derechos">
+            <p>Todos los derechos Reservados &copy;2023 - Autos AR</p>
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"> </script>
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../js/alquiler_editar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../img/logo/favicon.ico">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7/dist/sweetalert2.min.css" rel="stylesheet">    
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+         <img src="../img/logo/logo.jpeg" alt="logo" class="logo">
+         <nav class="navegacion-principal">            
+            <a class="nav-link tipografia" href="../index.html">Inicio</a></li>
+            <div class="menu">
+               <a class="nav-link tipografia" href="flota.html">Nuestra Flota</a>
+               <div class="submenu">
+                  <a class="nav-link tipografia" href="flota.html#autos">Autos</a>
+                  <a class="nav-link tipografia" href="flota.html#camionetas">Camionetas</a>
+                  <a class="nav-link tipografia" href="flota.html#furgones">Furgones</a>
+               </div>
+            </div>
+            <a class="nav-link tipografia" href="sucursales.html">Sucursales</a> 
+            <div class="menu">
+                <a class="nav-link tipografia" href="nosotros.html">Quienes Somos</a>    
+                <div class="submenu">
+                    <a class="nav-link tipografia" href="nosotros.html#equipo">Equipo</a>
+                    <a class="nav-link tipografia" href="nosotros.html#proposito">Nuestra visión</a>
+                </div>
+            </div> 
+            <a class="nav-link tipografia" href="contacto.html">Contacto</a>
+            <a class="nav-link tipografia" href="alquiler.html">Alquileres</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="espacio-contacto"></section>
+        <h1 class="tipografia">Contactanos</h1>         
+        <section class="formulario">
+            <form id="form2">
+                <fieldset>
+                    <legend class="tipografia">Indique sus datos personales:</legend>
+                    <div class="contenedor-inputs-contacto">
+                        <div class="inputs-contacto">
+                            <label class="tipografia">Nombre</label>
+                            <input class="input-text" type="text" id="text"  placeholder="Tu Nombre">
+                        </div>
+                        <div class="inputs-contacto">
+                            <label class="tipografia">Número</label>
+                            <input class="input-text" type="number" id="number" placeholder="Tu Número de contacto">
+                        </div>
+                        <div class="inputs-contacto">
+                            <label class="tipografia">E-mail</label>
+                            <input class="input-text" type="email" id="email" placeholder="Tu Correo electrónico">
+                        </div>
+
+                        <div class="inputs-contacto">
+                            <label class="tipografia">Mensaje</label>
+                            <textarea class="input-text textarea" id="mensaje" placeholder="Dejá tu comentario"></textarea>
+                        </div>
+                    </div>
+                    <div class="alinear-derecha">
+                        <button class="boton-enviar tipografia" type="submit">Enviar</button>
+                        <p class="warnings" id="warnings2"></p>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="redes-container"> 
+            <ul>
+                <li> <a href="#" class="facebook"><img src="../img/redes/facebook-circle-logo-24.png" alt="Facebook"></a></li>
+                <li> <a href="#" class="instagram"><img src="../img/redes/instagram-alt-logo-24.png" alt="Instagram"></a></li>
+                <li> <a href="#" class="whatsapp"><img src="../img/redes/whatsapp-logo-24.png" alt="Whatsapp"></a></li>
+                <!-- Ajusta las rutas y extensiones de archivo según tus nombres de archivos y formatos -->
+            </ul>
+        </div>
+        <div class="navfooter">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Quienes somos</a></li>
+                <li><a href="./sucursales.html">Sucursales</a></li>  
+                <li><a href="./flota.html"> Nuestra flota</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./alquiler.html">Alquileres</a></li>
+            </ul>
+        </div>   
+        <div class="linea_derechos"><p>Todos los derechos Reservados &copy;2023 - Autos AR</p></div> 
+    </footer>
+    <script src="../js/script.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>

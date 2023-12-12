@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../img/logo/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="../img/logo/logo.jpeg" alt="logo" class="logo">
+        <nav class="navegacion-principal">
+            <a class="nav-link tipografia" href="../index.html">Inicio</a></li>
+            <div class="menu">
+                <a class="nav-link tipografia" href="../pages/flota.html">Nuestra Flota</a>
+                <div class="submenu">
+                    <a class="nav-link tipografia" href="../pages/flota.html#autos">Autos</a>
+                    <a class="nav-link tipografia" href="../pages/flota.html#camionetas">Camionetas</a>
+                    <a class="nav-link tipografia" href="../pages/flota.html#furgones">Furgones</a>
+                </div>
+            </div>
+            <a class="nav-link tipografia" href="../pages/sucursales.html">Sucursales</a>
+            <div class="menu">
+                <a class="nav-link tipografia" href="../pages/nosotros.html">Quienes Somos</a>
+                <div class="submenu">
+                    <a class="nav-link tipografia" href="../pages/nosotros.html#equipo">Equipo</a>
+                    <a class="nav-link tipografia" href="../pages/nosotros.html#proposito">Nuestra visión</a>
+                </div>
+            </div>
+            <a class="nav-link tipografia" href="../pages/contacto.html">Contacto</a>
+            <a class="nav-link tipografia" href="../pages/alquiler.html">Alquileres</a>
+        </nav>
+    </header>
+    <main>
+        <div id="app" class="container">
+            <h1>Alquileres</h1>            
+            <a class="btn custom-button" href="../templates/alquiler_nuevo.html">Nuevo</a>
+            <br><br>
+            <div v-if="error">
+                <p>Lo sentimos , ........</p>
+            </div>
+            <div v-else>
+                <section v-if="cargando">
+                    <div class="spinner-border"></div>
+                    <p>Cargando .....</p>
+                </section>
+                <section v-else>
+                    <div class="table-responsive" style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.319)">
+                        <table class="table table-bordered custom-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Nombre Cliente</th>
+                                    <th scope="col">Precio</th>
+                                    <th scope="col">Vehiculo</th>
+                                    <th scope="col">Fecha Desde</th>
+                                    <th scope="col">Fecha Hasta</th>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="" v-for="alquiler in alquileres">
+                                    <td scope="row">{{alquiler.id}}</td>
+                                    <td>{{alquiler.nombre}}</td>
+                                    <td>{{alquiler.precio}}</td>
+                                    <td>{{alquiler.vehiculo}}</td>
+                                    <td>{{alquiler.fecha_desde}}</td>
+                                    <td>{{alquiler.fecha_hasta}}</td>
+                                    <td>
+                                        <img width="60" :src="alquiler.imagen" :alt="">
+                                    </td>
+                                    <td>  
+                                        <div class="d-flex justify-content-around align-items-center">
+                                            <a class="btn custom-button"
+                                            :href="'./alquiler_update.html?id='+ alquiler.id">Editar</a>
+                                            <button type="button" class="btn custom-button"
+                                            v-on:click="eliminar(alquiler.id)">Eliminar</button> 
+                                        </div>                                      
+                                                                            
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="redes-container">
+            <ul>
+                <li> <a href="#" class="facebook"><img src="../img/redes/facebook-circle-logo-24.png"
+                            alt="Facebook"></a></li>
+                <li> <a href="#" class="instagram"><img src="../img/redes/instagram-alt-logo-24.png"
+                            alt="Instagram"></a></li>
+                <li> <a href="#" class="whatsapp"><img src="../img/redes/whatsapp-logo-24.png" alt="Whatsapp"></a></li>
+                <!-- Ajusta las rutas y extensiones de archivo según tus nombres de archivos y formatos -->
+            </ul>
+        </div>
+        <div class="navfooter">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/nosotros.html">Quienes somos</a></li>
+                <li><a href="../pages/sucursales.html">Sucursales</a></li>
+                <li><a href="../pages/flota.html"> Nuestra flota</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/alquiler.html">Alquileres</a></li>
+            </ul>
+        </div>
+        <div class="linea_derechos">
+            <p>Todos los derechos Reservados &copy;2023 - Autos AR</p>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7/dist/sweetalert2.all.min.js"></script>
+    <script>
+        <!--Link de Bootstrap-->
+        src = "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity = "sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin = "anonymous"</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script><!--Link de VUE-->
+    <script src="../js/alquileres.js"></script>
+</body>
+
+</html>
