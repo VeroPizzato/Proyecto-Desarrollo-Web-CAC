@@ -56,14 +56,13 @@
                         <div class="row justify-content-center">
                             <div class="col-md-4" v-for="alquiler in alquileres">
                                 <div class="card mb-4 bg-secondary-subtle">
-                                    <div class="card-body text-center">
-                                        <p scope="row">Alquiler número: {{alquiler.id}}</p>
-                                        <p>Nombre Cliente: {{alquiler.nombre}}</p>
-                                        <p>Vehiculo: {{alquiler.vehiculo}}</p>
-                                        <p>Fecha Desde: {{alquiler.fecha_desde}}</p>
-                                        <p>Fecha Hasta: {{alquiler.fecha_hasta}}</p>
-                                        <p>A tan solo ${{alquiler.precio}}!</p>
-                                        <img width="100" :src="alquiler.imagen" :alt="">
+                                    <div class="card-body text-center">                                        
+                                        <p class="tipografia">Nombre Cliente: {{alquiler.nombre}}</p>
+                                        <p class="tipografia">Vehiculo: {{alquiler.vehiculo}}</p>
+                                        <p class="tipografia">Fecha Desde: {{alquiler.fecha_desde}}</p>
+                                        <p class="tipografia">Fecha Hasta: {{alquiler.fecha_hasta}}</p>
+                                        <p class="tipografia"><strong>A tan solo ${{alquiler.precio}}!</strong></p>                                       
+                                        <img width="250" :src="alquiler.imagen" :alt="">
                                     </div>
                                 </div>
                             </div>
