@@ -19,21 +19,26 @@
 .custom-table {
     background-color: #8486a6;
     border-radius: 10px;       
- }
+}
 
- .custom-button{
+.custom-button{
     background-color: #19dff1;
     font-weight: bold;
- }
+}
 
- .custom-button:hover{
+.custom-button:hover{
     background-color: black !important;
     color: white !important;
- }
+}
 
- .form-label{
+.form-label{
     margin-right: 8px;
- }
+}
+
+.card-body img:hover{
+    transform: scale(1.1);
+}
+
 
 html {
     width: 100%;
