@@ -916,3 +916,38 @@ filter: none;
     display: block;
 }
 
+
+/** LOGIN.HTML **/
+.card-inicio {
+    background: linear-gradient(to left, #7da4c5,#916eb2);
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+.card-titulo {
+    font-weight: 600;
+}
+
+.span1, .span2 {
+    color: white;
+}
+
+.boton-sesion {
+    background-image: linear-gradient(to left, #696ba8,#2f24c9);
+    font-weight: 700;
+}
+
+@media (max-width:768px) {
+    .card-inicio {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+}
+
+@media (min-width:768px) {
+    .card-inicio {
+        margin-bottom: 50px;
+    }
+}
+

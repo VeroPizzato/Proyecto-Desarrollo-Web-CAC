@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos Ar</title>
+    <link rel="shortcut icon" href="img/logo/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+
+<body>
+
+    <header>
+        <img src="../img/logo/logo.jpeg" alt="logo" class="logo">
+        <nav class="navegacion-principal">
+            <a class="nav-link tipografia" href="./index.html">Inicio</a></li>
+            <div class="menu">
+                <a class="nav-link tipografia" href="../pages/flota.html">Nuestra Flota</a>
+                <div class="submenu">
+                    <a class="nav-link tipografia" href="../pages/flota.html#autos">Autos</a>
+                    <a class="nav-link tipografia" href="../pages/flota.html#camionetas">Camionetas</a>
+                    <a class="nav-link tipografia" href="../pages/flota.html#furgones">Furgones</a>
+                </div>
+            </div>
+            <div class="menu">
+                <a class="nav-link tipografia" href="../pages/sucursales.html">Sucursales</a>
+                <div class="submenu">
+                    <a class="nav-link tipografia" href="../pages/sucursales.html#centro">Centro</a>
+                    <a class="nav-link tipografia" href="../pages/sucursales.html#cuyo">Cuyo</a>
+                    <a class="nav-link tipografia" href="../pages/sucursales.html#litoral">Litoral</a>
+                    <a class="nav-link tipografia" href="../pages/sucursales.html#norte">Norte</a>
+                    <a class="nav-link tipografia" href="../pages/sucursales.html#patagonia">Patagonia</a>
+                </div>
+            </div>
+            <div class="menu">
+                <a class="nav-link tipografia" href="../pages/nosotros.html">Quienes Somos</a>
+                <div class="submenu">
+                    <a class="nav-link tipografia" href="../pages/nosotros.html#equipo">Equipo</a>
+                    <a class="nav-link tipografia" href="../pages/nosotros.html#proposito">Nuestra visión</a>
+                </div>
+            </div>
+            <a class="nav-link tipografia" href="../pages/contacto.html">Contacto</a>
+            <a class="nav-link tipografia" href="../pages/alquiler.html">Alquileres</a>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card card-inicio">
+                    <div class="card-body">
+                        <h5 class="card-title text-center card-titulo">Inicio de sesión</h5>
+                        <form>
+                            <div class="form-group">
+                                <label for="dni">Nombre de Usuario</label>
+                                <input type="text" class="form-control" id="usuario" name="usuario"
+                                    placeholder="Ingrese su nombre de Usuario" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass">Contraseña:</label>
+                                <div class="input-group">
+                                    <input type="password" class="form-control" id="pass" name="password"
+                                        placeholder="Ingrese su Contraseña" required>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="eye-toggle">
+                                            <i class='bx bx-show-alt'></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="recordarUsuario">
+                                <label class="form-check-label" for="recordarUsuario">Recordar usuario</label>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                                <button type="submit" class="btn btn-primary btn-block mt-3 border-0 w-50 boton-sesion" href="../templates/alquileres.html">Iniciar
+                                    sesión</button>
+                            </div>
+                            <div class="sin-cuenta d-flex flex-column justify-content-center mt-3 align-items-center">
+                                <span class="span1">¿No tenés una cuenta?</span>
+                                <span class="span2">Registrate como <a class="invitado" href="/">Invitado</a>.</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <footer class="footer">
+        <div class="redes-container">
+            <ul>
+                <li> <a href="#" class="facebook"><img src="../img/redes/facebook-circle-logo-24.png" alt="Facebook"></a>
+                </li>
+                <li> <a href="#" class="instagram"><img src="../img/redes/instagram-alt-logo-24.png" alt="Instagram"></a>
+                </li>
+                <li> <a href="#" class="whatsapp"><img src="../img/redes/whatsapp-logo-24.png" alt="Whatsapp"></a></li>
+                <!-- Ajusta las rutas y extensiones de archivo según tus nombres de archivos y formatos -->
+            </ul>
+        </div>
+        <div class="navfooter">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./pages/nosotros.html">Quienes somos</a></li>
+                <li><a href="./pages/sucursales.html">Sucursales</a></li>
+                <li><a href="./pages/flota.html"> Nuestra flota</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="./pages/alquiler.html">Alquileres</a></li>
+            </ul>
+        </div>
+        <div class="linea_derechos">
+            <p>Todos los derechos Reservados &copy;2023 - Autos AR</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+    <script src="/js/login.js"></script>
+
+</body>
+
+</html>
