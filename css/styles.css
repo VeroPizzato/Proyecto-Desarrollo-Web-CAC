@@ -27,6 +27,11 @@
     font-weight: bold;
  }
 
+ .custom-button:hover{
+    background-color: black !important;
+    color: white !important;
+ }
+
  .form-label{
     margin-right: 8px;
  }
