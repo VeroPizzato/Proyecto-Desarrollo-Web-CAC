@@ -16,6 +16,21 @@
 
 /**GENERAL**/
 
+.custom-table {
+    background-color: #8486a6;
+    border-radius: 10px;   
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.319);
+ }
+
+ .custom-button{
+    background-color: #19dff1;
+    font-weight: bold;
+ }
+
+ .form-label{
+    margin-right: 8px;
+ }
+
 html {
     width: 100%;
     box-sizing: border-box;

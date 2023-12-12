@@ -8,6 +8,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
 integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 <!-- <link rel="stylesheet" href="../css/styles.css"> -->
+<link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
 <header id="header">
@@ -15,38 +16,40 @@ integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+f
 </header>
 <main>
 <div class="container" id="app">
-<form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
+<form style="background-color: #8486a6; border-radius: 10px; margin:10px auto ; width: 400px; padding: 20px;">
 <h2>Editar Alquiler </h2>
 <div class="mb-3">
-<label for="id">Id</label>
+<label class="form-label" for="id">Id</label>
 <input type="number" name="id" id="id" disabled v-model="id" >
 </div>
 <div class="mb-3">
-<label for="nombre">Nombre</label>
+<label class="form-label" for="nombre">Nombre</label>
 <input type="text" name="nombre" id="nombre" v-model="nombre">
 </div>
 <div class="mb-3">
-<label for="precio">Precio</label>
+<label class="form-label" for="precio">Precio</label>
 <input type="number" name="precio" id="precio" v-model="precio">
 </div>
 <div class="mb-3">
-<label for="vehiculo">Vehiculo</label>
+<label class="form-label" for="vehiculo">Vehiculo</label>
 <input type="text" name="vehiculo" id="vehiculo" v-model="vehiculo">
 </div>
 <div class="mb-3">
-<label for="fecha_desde">Fecha Desde</label>
+<label class="form-label" for="fecha_desde">Fecha Desde</label>
 <input type="date" name="fecha_desde" id="fecha_desde" v-model="fecha_desde">
 </div>
 <div class="mb-3">
-<label for="fecha_hasta">Fecha Hasta</label>
+<label class="form-label" for="fecha_hasta">Fecha Hasta</label>
 <input type="date" name="fecha_hasta" id="fecha_hasta" v-model="fecha_hasta">
 </div>
 <div class="mb-3">
-<label for="imagen">Imagen</label>
+<label class="form-label" for="imagen">Imagen</label>
 <input type="text" name="imagen" id="imagen" v-model="imagen">
 <img width="100" :src="imagen" alt="">
 </div>
-<button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
+<div class="text-center mb-3">
+    <button type="button" class="btn custom-button" v-on:click="modificar()">Grabar</button>
+</div>
 </form>
 </div>
 </main>
