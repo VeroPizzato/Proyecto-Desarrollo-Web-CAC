@@ -38,7 +38,7 @@
     </header>
     <main>
         <div id="app" class="container">
-            <h1>Alquileres</h1>            
+            <h1>Alquileres</h1>
             <a class="btn custom-button" href="../templates/alquiler_nuevo.html">Nuevo</a>
             <br><br>
             <div v-if="error">
@@ -50,44 +50,43 @@
                     <p>Cargando .....</p>
                 </section>
                 <section v-else>
-                    <div class="table-responsive" style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.319)">
-                        <table class="table table-bordered custom-table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Id</th>
-                                    <th scope="col">Nombre Cliente</th>
-                                    <th scope="col">Precio</th>
-                                    <th scope="col">Vehiculo</th>
-                                    <th scope="col">Fecha Desde</th>
-                                    <th scope="col">Fecha Hasta</th>
-                                    <th scope="col">Imagen</th>
-                                    <th scope="col">Acciones</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="" v-for="alquiler in alquileres">
-                                    <td scope="row">{{alquiler.id}}</td>
-                                    <td>{{alquiler.nombre}}</td>
-                                    <td>{{alquiler.precio}}</td>
-                                    <td>{{alquiler.vehiculo}}</td>
-                                    <td>{{alquiler.fecha_desde}}</td>
-                                    <td>{{alquiler.fecha_hasta}}</td>
-                                    <td>
-                                        <img width="60" :src="alquiler.imagen" :alt="">
-                                    </td>
-                                    <td>  
-                                        <div class="d-flex justify-content-around align-items-center">
-                                            <a class="btn custom-button"
+                    <table class="table table-responsive table-bordered table-hover custom-table"
+                        style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.319)">
+                        <thead>
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Nombre Cliente</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Vehiculo</th>
+                                <th scope="col">Fecha Desde</th>
+                                <th scope="col">Fecha Hasta</th>
+                                <th scope="col">Imagen</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="" v-for="alquiler in alquileres">
+                                <td scope="row">{{alquiler.id}}</td>
+                                <td>{{alquiler.nombre}}</td>
+                                <td>{{alquiler.precio}}</td>
+                                <td>{{alquiler.vehiculo}}</td>
+                                <td>{{alquiler.fecha_desde}}</td>
+                                <td>{{alquiler.fecha_hasta}}</td>
+                                <td>
+                                    <img width="60" :src="alquiler.imagen" :alt="">
+                                </td>
+                                <td>
+                                    <div class="d-flex justify-content-around align-items-center">
+                                        <a class="btn custom-button"
                                             :href="'./alquiler_update.html?id='+ alquiler.id">Editar</a>
-                                            <button type="button" class="btn custom-button"
-                                            v-on:click="eliminar(alquiler.id)">Eliminar</button> 
-                                        </div>                                      
-                                                                            
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                                        <button type="button" class="btn custom-button"
+                                            v-on:click="eliminar(alquiler.id)">Eliminar</button>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </section>
             </div>
         </div>
